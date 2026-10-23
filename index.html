@@ -19250,5 +19250,39 @@ window.addEventListener('load',function(){setTimeout(applyV280Status,600)});
 setInterval(applyV280Status,700);
 })();
 </script>
+
+<!-- v281: keep the four user-facing cloud status indicators visible -->
+<style id="v281StatusAlwaysVisibleStyle">
+  #v130StatusWrap, #v280StatusWrap {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+</style>
+<script id="v281StatusAlwaysVisibleScript">
+(function(){
+  function keepStatusVisible(){
+    ['v130StatusWrap','v280StatusWrap'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el){
+        el.style.setProperty('display','flex','important');
+        el.style.setProperty('visibility','visible','important');
+        el.style.setProperty('opacity','1','important');
+      }
+    });
+  }
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded', keepStatusVisible);
+  } else {
+    keepStatusVisible();
+  }
+  window.addEventListener('load', keepStatusVisible);
+  setTimeout(keepStatusVisible, 250);
+  setTimeout(keepStatusVisible, 1000);
+  setTimeout(keepStatusVisible, 2500);
+  setInterval(keepStatusVisible, 1500);
+})();
+</script>
+
 </body>
 </html>
