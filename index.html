@@ -27,7 +27,7 @@ main{max-width:1500px;margin:auto;padding:15px}.card{background:white;padding:15
 .standard-editor-910{border:1px solid #cfd8e3;border-radius:6px;background:#fff;padding:5px 7px;margin-bottom:6px}.standard-editor-title{font-weight:700;font-size:11px;margin-bottom:4px}.standard-editor-row{display:flex;flex-wrap:wrap;align-items:center;gap:5px}.standard-editor-row label{font-size:10px;font-weight:600;white-space:nowrap}.standard-editor-row input{width:36px;min-width:36px;height:23px;padding:1px;text-align:center;border:1px solid #8aa8c8;border-radius:4px;background:#fff}.standard-editor-row input:focus{outline:2px solid #174a8b}.standard-editor-row select{height:23px;padding:1px 4px;border:1px solid #8aa8c8;border-radius:4px;background:#fff;font-size:11px}.standard-total-910{font-size:10px;font-weight:700;padding:3px 5px;background:#f5f8fc;border-radius:4px}@media(max-width:900px){.standard-editor-row{gap:5px}.standard-editor-row input{width:38px;min-width:38px}}
 
 .std-inline-910{border:1px solid #cfd8e3;border-radius:5px;background:#fff;padding:4px 6px;margin:4px 0 6px;display:flex;align-items:center;gap:5px;flex-wrap:wrap;font-size:10px}.std-inline-910 .title{font-weight:700;margin-right:3px}.std-inline-910 label{font-weight:600;display:inline-flex;align-items:center;gap:2px}.std-inline-910 input{width:32px;min-width:32px;height:23px;padding:1px;text-align:center;border:1px solid #8aa8c8;border-radius:3px;font-size:10px}.std-inline-910 select{height:23px;padding:1px 3px;border:1px solid #8aa8c8;border-radius:3px;font-size:10px}.std-inline-910 .total{font-weight:700;margin-left:3px}.std-inline-910 small{font-size:9px;color:#555}
-.register910{min-width:1080px;font-size:8px}.register910 th{padding:3px 2px;vertical-align:middle}.register910 td{padding:2px}.register910 .nameHead{min-width:105px}.register910 .name{min-width:105px}.register910 .mark{width:26px;min-width:26px;padding:1px;font-size:8px}.register910 .rmark{width:25px;min-width:25px}
+.register910{min-width:1080px;font-size:8px}.register910 th{padding:5px 2px;vertical-align:middle}.register910 td{padding:2px}.register910 .nameHead{min-width:105px}.register910 .name{min-width:105px}.register910 .mark{width:26px;min-width:26px;padding:1px;font-size:8px}.register910 .rmark{width:25px;min-width:25px}
 .schoolRegisterGrid{min-width:1700px;font-size:10px}.schoolRegisterGrid th,.schoolRegisterGrid td{padding:4px 3px;border:1px solid #555;white-space:normal}.schoolRegisterGrid th{background:#e9eef6}.schoolRegisterGrid .nameHead{min-width:150px}.schoolRegisterGrid .name{min-width:150px}@media print{.schoolRegisterGrid{min-width:0;width:100%;font-size:7px}.schoolRegisterGrid th,.schoolRegisterGrid td{padding:2px}.schoolRegisterGrid .nameHead,.schoolRegisterGrid .name{min-width:90px}}
 .schoolEditInput{width:48px;min-width:48px;padding:2px;border:1px solid #8aa8c8;border-radius:3px;text-align:center;font-size:10px;background:#fffdf2}.schoolEditInput:focus{outline:2px solid #174a8b}.schoolDerived{font-weight:bold;background:#f5f8fc}.schoolRegisterWide{min-width:1900px;font-size:10px}.schoolRegisterWide th,.schoolRegisterWide td{border:1px solid #444;padding:3px;text-align:center;white-space:nowrap}.schoolRegisterWide th{background:#e8eef7}.schoolRegisterWide .schoolRegisterWide .assessment{min-width:115px;text-align:left;font-weight:bold}.schoolRegisterWide .maxcol{min-width:45px}.schoolRegisterWide .subjectHead{min-width:90px}.schoolEditMode{background:#fffaf0!important}
 @media print{.schoolRegisterWide{min-width:0;width:100%;font-size:6.5px}.schoolRegisterWide th,.schoolRegisterWide td{padding:1.5px}.schoolRegisterWide .studentName{min-width:70px}.schoolEditInput{border:0;background:transparent;font-size:6.5px;width:30px;min-width:30px;padding:0}.no-print{display:none!important}}
@@ -53,6 +53,17 @@ main{max-width:1500px;margin:auto;padding:15px}.card{background:white;padding:15
 }
 </style>
 <!-- v10: Activity 2 total + FA /50 calculation fixed; raw-total column removed -->
+
+<style id="v258A4FitClean">
+@media print {
+ #__pc_print_overlay .pc-card>div[style*="overflow-x"]{width:100%!important;max-width:100%!important;min-width:0!important;overflow:hidden!important;}
+ #__pc_print_overlay table, #__pc_print_overlay .pc-table, #__pc_print_overlay .pc-table-910{width:100%!important;max-width:100%!important;min-width:0!important;table-layout:fixed!important;margin:0!important;}
+ #__pc_print_overlay col{width:auto!important;min-width:0!important;}
+ #__pc_print_overlay th, #__pc_print_overlay td{min-width:0!important;max-width:none!important;white-space:normal!important;word-break:break-word!important;overflow-wrap:anywhere!important;}
+ #__pc_print_overlay .pc-table th:first-child, #__pc_print_overlay .pc-table td:first-child{width:18%!important;}
+ #__pc_print_overlay .pc-table-910 th:first-child, #__pc_print_overlay .pc-table-910 td:first-child{width:16%!important;}
+}
+</style>
 </head>
 <body>
 <header><h1 id="schoolTitle">Teacher Friendly CCE Marks Entry</h1><div id="schoolInfo">ಶಾಲೆಯ ಮಾಹಿತಿಯನ್ನು Settingsನಲ್ಲಿ ನಮೂದಿಸಿ</div></header>
@@ -104,7 +115,7 @@ main{max-width:1500px;margin:auto;padding:15px}.card{background:white;padding:15
 <section id="marks" class="hidden">
 <div class="card"><h2>Marks Entry</h2><div class="grid">
 <div class="field"><label>Academic Year</label><input id="marksYear" readonly></div>
-<div class="field"><label>Class</label><select id="marksClass" onchange="renderMarks()"></select></div>
+<div class="field"><label>Class</label><select id="marksClass" onchange="updateMarksSubjectOptions();renderMarks()"></select></div>
 <div class="field"><label>Section</label><select id="marksSection" onchange="renderMarks()"></select></div>
 <div class="field"><label>Subject</label><select id="marksSubject" onchange="renderMarks()"></select></div>
 <div class="field"><label>Assessment</label><select id="assessmentSelect" onchange="renderMarks()"><option>FA1</option><option>FA2</option><option>SA1</option><option>FA3</option><option>FA4</option><option>SA2</option></select></div>
@@ -176,7 +187,7 @@ main{max-width:1500px;margin:auto;padding:15px}.card{background:white;padding:15
 
 <section id="report" class="hidden">
 <div class="card"><h2>Consolidated Report</h2><div class="grid">
-<div class="field"><label>Class</label><select id="reportClass" onchange="renderReport()"></select></div>
+<div class="field"><label>Class</label><select id="reportClass" onchange="updateReportSubjectOptions();renderReport()"></select></div>
 <div class="field"><label>Section</label><select id="reportSection" onchange="renderReport()"></select></div>
 <div class="field"><label>Subject</label><select id="reportSubject" onchange="renderReport()"></select></div>
 </div>
@@ -194,11 +205,12 @@ main{max-width:1500px;margin:auto;padding:15px}.card{background:white;padding:15
 <div class="field"><label>ವಿಭಾಗ</label><select id="school910Section" onchange="renderSchoolConsolidated()"></select></div>
 </div>
 <div class="notice"><b>ಶಾಲಾ ಹಂತದ ಕ್ರೂಡೀಕರಣ</b> — 1–5, 6–8 ಮತ್ತು 9–10ನೇ ತರಗತಿಗಳ ಪ್ರತ್ಯೇಕ ನಮೂನೆಗಳು. ಶಿಕ್ಷಕರ ವೈಯಕ್ತಿಕ Consolidated Report ಬದಲಾಗುವುದಿಲ್ಲ.</div>
-<div class="toolbar no-print"><button class="btn warning" onclick="toggleSchoolEditMode()">✏️ Edit</button><button class="btn success" onclick="saveSchoolConsolidatedEdits()">💾 Save</button><button class="btn" onclick="printArea('school910Table')">🖨 Print</button><button class="btn" onclick="exportSchoolConsolidatedExcel()">📤 Excel</button><button class="btn primary" onclick="exportSchoolConsolidatedPDF()">📄 PDF</button></div>
+<div class="toolbar no-print"><button class="btn warning" onclick="toggleSchoolEditMode()">✏️ Edit</button><button class="btn success" onclick="saveSchoolConsolidatedEdits()">💾 Save</button><button class="btn" onclick="printArea('school910Table')">🖨 Print</button><button class="btn" onclick="exportSchoolConsolidatedExcel()">📤 Excel</button><button class="btn primary" onclick="exportSchoolConsolidatedPDF()">📄 PDF</button><button class="btn success" onclick="openProgressCard()">📘 Marks Card / Progress Card</button></div>
 <div id="school910Table"></div>
 </div>
 </section>
 
+<div id="progressCardModal" class="pc-modal hidden"><div class="pc-dialog"><div class="pc-actions no-print"><b>📘 Marks Card / Progress Card</b><span></span><select id="pcStudent"></select><button class="btn primary" onclick="renderProgressCard()">View</button><button class="btn" onclick="printProgressCard()">🖨 Print</button><button class="btn danger" onclick="closeProgressCard()">✕ Close</button></div><div id="progressCardBody"></div></div></div>
 <section id="tc" class="hidden">
 <div class="card"><h2>Transfer Certificate</h2><div class="grid">
 <div class="field"><label>Class</label><select id="tcClass" onchange="renderTCStudents()"></select></div>
@@ -306,12 +318,41 @@ function save910StandardMax(){
   apply910Settings();
 }
 
+function reportSubjectsForClass(c){
+  return Number(c)<=5 ? [["firstLanguage","ಪ್ರಥಮ ಭಾಷೆ"],["secondLanguage","ದ್ವಿತೀಯ ಭಾಷೆ"],["mathematics","ಗಣಿತ"],["science","ಪರಿಸರ ಅಧ್ಯಯನ"]] : Object.entries(SUBJECTS);
+}
+function updateReportSubjectOptions(){
+  const sel=document.getElementById("reportSubject"), cls=document.getElementById("reportClass"); if(!sel||!cls)return;
+  const old=sel.value,list=reportSubjectsForClass(cls.value); sel.innerHTML=list.map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
+  if(list.some(([k])=>k===old))sel.value=old;
+}
+function reportSubjectLabel(c,key){const x=reportSubjectsForClass(c).find(([k])=>k===key);return x?x[1]:(SUBJECTS[key]||key)}
+
+function marksSubjectsForClass(c){
+  return Number(c)<=5
+    ? [["firstLanguage","ಪ್ರಥಮ ಭಾಷೆ"],["secondLanguage","ದ್ವಿತೀಯ ಭಾಷೆ"],["mathematics","ಗಣಿತ"],["science","ಪರಿಸರ ಅಧ್ಯಯನ"]]
+    : Object.entries(SUBJECTS);
+}
+function updateMarksSubjectOptions(){
+  const sel=document.getElementById("marksSubject");
+  const cls=document.getElementById("marksClass");
+  if(!sel||!cls)return;
+  const old=sel.value;
+  const list=marksSubjectsForClass(cls.value);
+  sel.innerHTML=list.map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
+  if(list.some(([k])=>k===old))sel.value=old;
+}
+function marksSubjectLabel(c,key){
+  const item=marksSubjectsForClass(c).find(([k])=>k===key);
+  return item?item[1]:(SUBJECTS[key]||key);
+}
+
 function fillSelectors(){
  let classes=[];for(let i=1;i<=10;i++)classes.push(String(i));
  ["studentClass","marksClass","reportClass","tcClass"].forEach(id=>document.getElementById(id).innerHTML=classes.map(c=>`<option value="${c}">${c}</option>`).join(""));
  ["studentSection","marksSection","reportSection","tcSection"].forEach(id=>document.getElementById(id).innerHTML=SECTIONS.map(s=>`<option value="${s}">${s}</option>`).join(""));
  const subjects=Object.entries(SUBJECTS).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
- marksSubject.innerHTML=subjects;reportSubject.innerHTML=subjects;marksYear.value=db.school.academicYear;
+ marksSubject.innerHTML=subjects;reportSubject.innerHTML=subjects;updateMarksSubjectOptions();updateReportSubjectOptions();marksYear.value=db.school.academicYear;
   const ss=document.getElementById("school910Section"); if(ss) ss.innerHTML=SECTIONS.map(x=>`<option value="${x}">${x}</option>`).join("");
   updateSchoolReportClassOptions();
 }
@@ -365,7 +406,7 @@ function renderMarks(){
    editor.style.display=show910Editor?"block":"none";
    if(show910Editor) load910StandardMaxEditor();
  }
- marksInfo.innerHTML=is910?`<b>Class ${c}</b> | ${a} | ${SUBJECTS[subject]} | 9–10ನೇ ತರಗತಿ Marks Entry | <b>FA → /50</b>`:`<b>${a}</b> | Class ${c} | Section ${s} | ${SUBJECTS[subject]} | FA 50 → ${getFAScale(c)}`;
+ marksInfo.innerHTML=is910?`<b>Class ${c}</b> | ${a} | ${marksSubjectLabel(c,subject)} | 9–10ನೇ ತರಗತಿ Marks Entry | <b>FA → /50</b>`:`<b>${a}</b> | Class ${c} | Section ${s} | ${marksSubjectLabel(c,subject)} | FA 50 → ${getFAScale(c)}`;
  if(!students.length){marksTable.innerHTML="<div class='notice'>ಈ Class + Sectionನಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿಗಳಿಲ್ಲ. ಮೊದಲು Student Databaseನಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು ಸೇರಿಸಿ.</div>";return}
  if(Number(c)<=8&&a.startsWith("FA")){renderFA(c,s,subject,a,d,students);return}
  if(Number(c)<=8){renderSA(c,s,subject,a,d,students);return}
@@ -623,7 +664,7 @@ function renderReport(){
   const faScale=(Number(c)>=1&&Number(c)<=5)?15:(Number(c)>=6&&Number(c)<=8?10:0);
   const saScale=primary?20:(Number(c)>=6&&Number(c)<=8?50:0);
 
-  let html=`<div class="notice"><b>Class ${c} | Section ${s} | ${SUBJECTS[subject]}</b><br>ಪ್ರತಿ Assessmentಗೆ ಪರಿವರ್ತಿತ ಅಂಕ ಮತ್ತು Grade ಪ್ರತ್ಯೇಕ ಕಾಲಂನಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ.</div>`;
+  let html=`<div class="notice"><b>Class ${c} | Section ${s} | ${reportSubjectLabel(c,subject)}</b><br>ಪ್ರತಿ Assessmentಗೆ ಪರಿವರ್ತಿತ ಅಂಕ ಮತ್ತು Grade ಪ್ರತ್ಯೇಕ ಕಾಲಂನಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ.</div>`;
   html+=`<div class="table-wrap"><table id="reportGrid"><thead><tr><th>No</th><th>Student</th>`;
   ASSESSMENTS.forEach(a=>{
     const scale=a.startsWith("FA")?faScale:saScale;
@@ -923,6 +964,19 @@ function loadTC(){const c=tcClass.value,s=tcSection.value,d=getClassSection(c,s)
 function saveTC(){const c=tcClass.value,s=tcSection.value,d=getClassSection(c,s),st=d.students.find(x=>x.id===tcStudent.value);if(!st){alert("ವಿದ್ಯಾರ್ಥಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.");return}st.status="Transferred";st.tc={number:tcNumber.value,date:tcDate.value,reason:tcReason.value};saveData();loadTC();alert("Transfer / TC details saved.")}
 function printTC(){const content=document.getElementById("tcPreview").innerHTML,w=window.open("","_blank");w.document.write(`<html><head><title>Transfer Certificate</title><style>body{font-family:Arial;padding:40px}</style></head><body>${content}
 <!-- v120: Dashboard totals count every valid current student; gender/category can be blank. Student add/delete triggers immediate dashboard refresh. -->
+
+<style id="v243Exact910CardFit">
+/* v243: fit all School Consolidated academic columns on the 9-10 Marks Card; no co-curricular boxes. */
+#progressCardBody .pc-table-910{font-size:8.4px!important;table-layout:fixed!important}
+#progressCardBody .pc-table-910 th,#progressCardBody .pc-table-910 td{padding:3px 1px!important;line-height:1.2!important;overflow-wrap:anywhere!important}
+#progressCardBody .pc-table-910 th:first-child,#progressCardBody .pc-table-910 td:first-child{width:15%!important}
+@media print{#progressCardBody .pc-table-910{font-size:7px!important}#progressCardBody .pc-table-910 th,#progressCardBody .pc-table-910 td{padding:2px .5px!important}}
+</style>
+
+<!-- v254: Consolidated Report display-only fix.
+     Missing assessment marks render as "-" instead of "null".
+     No marks/conversion/grade/storage/print/login logic changed. -->
+
 </body></html>`);w.document.close();w.print()}
 
 function exportStudents(){const data=[];for(let c=1;c<=10;c++)SECTIONS.forEach(s=>{const d=db.classes[c]?.[s];if(!d)return;d.students.forEach(st=>data.push({Class:c,Section:s,AdmissionNo:st.admission||"",Name:st.name,Status:st.status||"Active"}))});const ws=XLSX.utils.json_to_sheet(data),wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,ws,"Students");XLSX.writeFile(wb,"CCE_Students.xlsx")}
@@ -1325,7 +1379,7 @@ fillSelectors();fill910Selectors();updateHeader();updateDashboard();showPage("da
 #reportTable .teacherConsolidatedWide .name{width:105px;text-align:left}
 #reportTable .teacherConsolidatedWide .groupHead{background:#e8eef6}
 #reportTable .teacherConsolidatedWide .extraInput{width:34px;min-width:34px;font-size:8px;padding:1px;text-align:center}
-#school910Table .schoolRegisterWide2{width:100%;table-layout:fixed;font-size:7.5px;border-collapse:collapse}
+#school910Table .schoolRegisterWide2{width:100%;table-layout:fixed;font-size:8.5px;border-collapse:collapse}
 #school910Table .schoolRegisterWide2 th,#school910Table .schoolRegisterWide2 td{border:1px solid #555;padding:2px;text-align:center;vertical-align:middle;white-space:normal}
 #school910Table .schoolRegisterWide2 .studentName{width:105px;text-align:left}
 #school910Table .schoolRegisterWide2 .groupHead{background:#e8eef6}
@@ -1481,7 +1535,7 @@ var reportToolbarFinal=document.querySelector('#report .toolbar');if(reportToolb
   window.renderSchoolPrimaryOrMiddleFinal=function(){
     var c=String(school910Class.value),s=school910Section.value||'A',d=getClassSection(c,s),subjects=schoolReportSubjects(c),primary=Number(c)<=5,maxFA=primary?15:10,maxSA=primary?20:30;
     var html='<div class="notice"><b>'+T('schoolTitle')+' — '+c+' | '+(lang()==='kn'?'ವಿಭಾಗ':'Section')+' '+s+'</b><br>'+ (primary?'FA1 /15 + FA2 /15 + SA1 /20 = 50; FA3 /15 + FA4 /15 + SA2 /20 = 50; '+T('annual')+' /100':'FA1 /10 + FA2 /10 + SA1 /30 = 50; FA3 /10 + FA4 /10 + SA2 /30 = 50; '+T('annual')+' /100')+'</div>';
-    html+='<div class="table-wrap"><table id="schoolPrimaryMiddleGrid" class="schoolRegisterWide2"><thead><tr><th rowspan="2">'+T('no')+'</th><th rowspan="2" class="studentName">'+T('student')+'</th><th rowspan="2">'+T('assessment')+'</th><th rowspan="2">'+T('max')+'</th>'+subjects.map(function(x){return '<th colspan="2" class="groupHead">'+subjectLabel(x[0])+'</th>'}).join('')+'<th colspan="4" class="groupHead">'+(lang()==='kn'?'ಪಠ್ಯೇತರ ಚಟುವಟಿಕೆಗಳು':'Co-curricular Activities')+'</th></tr><tr>'+subjects.map(function(){return '<th>'+T('marks')+'</th><th>'+T('grade')+'</th>'}).join('')+'<th>'+T('physical')+'</th><th>'+T('value')+'</th><th>'+T('work')+'</th><th>'+T('art')+'</th></tr></thead><tbody>';
+    html+='<div class="table-wrap"><table id="schoolPrimaryMiddleGrid" class="schoolRegisterWide2"><thead><tr><th rowspan="2">'+T('no')+'</th><th rowspan="2" class="studentName">'+T('student')+'</th><th rowspan="2">'+T('assessment')+'</th><th rowspan="2">'+T('max')+'</th>'+subjects.map(function(x){return '<th colspan="2" class="groupHead">'+x[1]+'</th>'}).join('')+'<th colspan="4" class="groupHead">'+(lang()==='kn'?'ಪಠ್ಯೇತರ ಚಟುವಟಿಕೆಗಳು':'Co-curricular Activities')+'</th></tr><tr>'+subjects.map(function(){return '<th>'+T('marks')+'</th><th>'+T('grade')+'</th>'}).join('')+'<th>'+T('physical')+'</th><th>'+T('value')+'</th><th>'+T('work')+'</th><th>'+T('art')+'</th></tr></thead><tbody>';
     var rows=[['FA1',maxFA],['FA2',maxFA],['SA1',maxSA],['ಒಟ್ಟು — 1ನೇ ಸೆಮಿಸ್ಟರ್',50],['FA3',maxFA],['FA4',maxFA],['SA2',maxSA],['ಒಟ್ಟು — 2ನೇ ಸೆಮಿಸ್ಟರ್',50],['ವಾರ್ಷಿಕ ಒಟ್ಟು',100]];
     d.students.filter(function(st){return st.status!=='Transferred'}).forEach(function(st,i){rows.forEach(function(row,ri){var a=row[0],max=row[1],derived=a.indexOf('ಒಟ್ಟು')>=0;var alabel=derived?(a==='ವಾರ್ಷಿಕ ಒಟ್ಟು'?T('annual'):(a.indexOf('1ನೇ')>=0?T('sem1'):T('sem2'))):a;html+='<tr class="'+(derived?'schoolDerived':'')+'">'+(ri===0?'<td rowspan="9">'+(i+1)+'</td>'+schoolStudentCells(st,9):'')+'<td>'+alabel+'</td><td>'+max+'</td>';subjects.forEach(function(pair){var key=pair[0];if(!derived){var x=schoolDisplayedAssessment(d,st,key,a,c);html+='<td>'+schoolMarkInput(c,s,st,key,a,x.mark,max)+'<span class="viewMark">'+(x.mark===null?'-':x.mark)+'</span></td><td>'+(x.mark===null?'-':x.grade)+'</td>'}else{var list=a==='ಒಟ್ಟು — 1ನೇ ಸೆಮಿಸ್ಟರ್'?['FA1','FA2','SA1']:a==='ಒಟ್ಟು — 2ನೇ ಸೆಮಿಸ್ಟರ್'?['FA3','FA4','SA2']:['FA1','FA2','SA1','FA3','FA4','SA2'];var vals=list.map(function(z){return schoolDisplayedAssessment(d,st,key,z,c)}).filter(function(x){return x.mark!==null});var total=vals.length?Number(vals.reduce(function(q,x){return q+Number(x.mark||0)},0).toFixed(2)):null;html+='<td>'+ (total===null?'-':fmt2(total))+'</td><td>'+ (total===null?'-':gradeByMax(total,max))+'</td>'}});if(ri===0)EXTRA_FIELDS_FINAL.forEach(function(x){html+='<td rowspan="9">'+extraInputFinal(c,s,st.id,x[0])+'</td>'});html+='</tr>'})});
     html+='</tbody></table></div>';school910Table.innerHTML=html;bindExtraInputsFinal(school910Table);schoolEditMode=false;updateSchoolEditUI();
@@ -1506,8 +1560,8 @@ var reportToolbarFinal=document.querySelector('#report .toolbar');if(reportToolb
   /* Teacher report language + metadata + extra activity values. */
   window.renderReportFinal=function(){var c=String(reportClass.value),s=reportSection.value,subject=reportSubject.value,d=getClassSection(c,s);if(Number(c)>=9){
     var html='<div class="notice"><b>'+T('teacherTitle')+' — '+c+'</b></div><div class="table-wrap"><table id="reportGrid" class="teacherConsolidatedWide"><thead><tr><th>'+T('no')+'</th><th class="name">'+T('student')+'</th><th>FA1 '+T('marks')+'</th><th>'+T('grade')+'</th><th>FA2 '+T('marks')+'</th><th>'+T('grade')+'</th><th>SA1 '+T('marks')+'</th><th>'+T('grade')+'</th><th>'+T('sem1')+'</th><th>'+T('grade')+'</th><th>FA3 '+T('marks')+'</th><th>'+T('grade')+'</th><th>FA4 '+T('marks')+'</th><th>'+T('grade')+'</th><th>SA2 '+T('marks')+'</th><th>'+T('grade')+'</th><th>'+T('sem2')+'</th><th>'+T('grade')+'</th><th>'+T('annual')+'</th><th>'+T('grade')+'</th>'+EXTRA_FIELDS_FINAL.map(function(x){return '<th>'+extraLabel(x[0])+'</th>'}).join('')+'</tr></thead><tbody>';
-    d.students.filter(function(st){return st.status!=='Transferred'}).forEach(function(st,i){var v={};ASSESSMENTS.forEach(function(a){v[a]=teacherValueFinal(d,st,subject,a,c)});var sem1=Number(v.FA1.mark||0)+Number(v.FA2.mark||0)+Number(v.SA1.mark||0),sem2=Number(v.FA3.mark||0)+Number(v.FA4.mark||0)+Number(v.SA2.mark||0),annual=sem1+sem2;html+='<tr><td>'+ (i+1)+'</td><td class="name">'+escapeHTML(st.name)+studentMeta(st)+'</td>';['FA1','FA2','SA1'].forEach(function(a){html+='<td>'+v[a].mark+'</td><td>'+v[a].grade+'</td>'});html+='<td>'+fmt2(sem1)+'</td><td>'+gradeByMax(sem1,50)+'</td>';['FA3','FA4','SA2'].forEach(function(a){html+='<td>'+v[a].mark+'</td><td>'+v[a].grade+'</td>'});html+='<td>'+fmt2(sem2)+'</td><td>'+gradeByMax(sem2,50)+'</td><td>'+fmt2(annual)+'</td><td>'+gradeByMax(annual,100)+'</td>'+EXTRA_FIELDS_FINAL.map(function(x){return '<td>'+extraInputFinal(c,s,st.id,x[0])+'</td>'}).join('')+'</tr>'});html+='</tbody></table></div>';reportTable.innerHTML=html;bindExtraInputsFinal(reportTable);updateTeacherExtraFinal();return;}
-    var primary=Number(c)<=5,faScale=primary?15:10,saScale=primary?20:30;var html='<div class="notice"><b>'+T('teacherTitle')+' — '+c+' | '+subjectLabel(subject)+'</b></div><div class="table-wrap"><table id="reportGrid" class="teacherConsolidatedWide"><thead><tr><th rowspan="2">'+T('no')+'</th><th rowspan="2" class="name">'+T('student')+'</th><th colspan="2">FA1</th><th colspan="2">FA2</th><th colspan="2">SA1</th><th colspan="2">'+T('sem1')+'</th><th colspan="2">FA3</th><th colspan="2">FA4</th><th colspan="2">SA2</th><th colspan="2">'+T('sem2')+'</th><th colspan="2">'+T('annual')+'</th>'+EXTRA_FIELDS_FINAL.map(function(x){return '<th>'+extraLabel(x[0])+'</th>'}).join('')+'</tr><tr>';['FA1','FA2'].forEach(function(){html+='<th>'+T('marks')+' /'+faScale+'</th><th>'+T('grade')+'</th>'});html+='<th>'+T('marks')+' /'+saScale+'</th><th>'+T('grade')+'</th><th>'+T('marks')+' /50</th><th>'+T('grade')+'</th>';['FA3','FA4'].forEach(function(){html+='<th>'+T('marks')+' /'+faScale+'</th><th>'+T('grade')+'</th>'});html+='<th>'+T('marks')+' /'+saScale+'</th><th>'+T('grade')+'</th><th>'+T('marks')+' /50</th><th>'+T('grade')+'</th><th>'+T('marks')+' /100</th><th>'+T('grade')+'</th></tr></thead><tbody>';d.students.filter(function(st){return st.status!=='Transferred'}).forEach(function(st,i){var v={};ASSESSMENTS.forEach(function(a){v[a]=teacherValueFinal(d,st,subject,a,c)});var sem1=Number(v.FA1.mark||0)+Number(v.FA2.mark||0)+Number(v.SA1.mark||0),sem2=Number(v.FA3.mark||0)+Number(v.FA4.mark||0)+Number(v.SA2.mark||0),annual=sem1+sem2;html+='<tr><td>'+ (i+1)+'</td><td class="name">'+escapeHTML(st.name)+studentMeta(st)+'</td>';['FA1','FA2','SA1'].forEach(function(a){html+='<td>'+v[a].mark+'</td><td>'+v[a].grade+'</td>'});html+='<td>'+fmt2(sem1)+'</td><td>'+gradeByMax(sem1,50)+'</td>';['FA3','FA4','SA2'].forEach(function(a){html+='<td>'+v[a].mark+'</td><td>'+v[a].grade+'</td>'});html+='<td>'+fmt2(sem2)+'</td><td>'+gradeByMax(sem2,50)+'</td><td>'+fmt2(annual)+'</td><td>'+gradeByMax(annual,100)+'</td>'+EXTRA_FIELDS_FINAL.map(function(x){return '<td>'+extraInputFinal(c,s,st.id,x[0])+'</td>'}).join('')+'</tr>'});html+='</tbody></table></div>';reportTable.innerHTML=html;bindExtraInputsFinal(reportTable);updateTeacherExtraFinal();};
+    d.students.filter(function(st){return st.status!=='Transferred'}).forEach(function(st,i){var v={};ASSESSMENTS.forEach(function(a){v[a]=teacherValueFinal(d,st,subject,a,c)});var sem1=Number(v.FA1.mark||0)+Number(v.FA2.mark||0)+Number(v.SA1.mark||0),sem2=Number(v.FA3.mark||0)+Number(v.FA4.mark||0)+Number(v.SA2.mark||0),annual=sem1+sem2;html+='<tr><td>'+ (i+1)+'</td><td class="name">'+escapeHTML(st.name)+studentMeta(st)+'</td>';['FA1','FA2','SA1'].forEach(function(a){html+='<td>'+(v[a].mark===null?'-':v[a].mark)+'</td><td>'+v[a].grade+'</td>'});html+='<td>'+fmt2(sem1)+'</td><td>'+gradeByMax(sem1,50)+'</td>';['FA3','FA4','SA2'].forEach(function(a){html+='<td>'+(v[a].mark===null?'-':v[a].mark)+'</td><td>'+v[a].grade+'</td>'});html+='<td>'+fmt2(sem2)+'</td><td>'+gradeByMax(sem2,50)+'</td><td>'+fmt2(annual)+'</td><td>'+gradeByMax(annual,100)+'</td>'+EXTRA_FIELDS_FINAL.map(function(x){return '<td>'+extraInputFinal(c,s,st.id,x[0])+'</td>'}).join('')+'</tr>'});html+='</tbody></table></div>';reportTable.innerHTML=html;bindExtraInputsFinal(reportTable);updateTeacherExtraFinal();return;}
+    var primary=Number(c)<=5,faScale=primary?15:10,saScale=primary?20:30;var html='<div class="notice"><b>'+T('teacherTitle')+' — '+c+' | '+subjectLabel(subject)+'</b></div><div class="table-wrap"><table id="reportGrid" class="teacherConsolidatedWide"><thead><tr><th rowspan="2">'+T('no')+'</th><th rowspan="2" class="name">'+T('student')+'</th><th colspan="2">FA1</th><th colspan="2">FA2</th><th colspan="2">SA1</th><th colspan="2">'+T('sem1')+'</th><th colspan="2">FA3</th><th colspan="2">FA4</th><th colspan="2">SA2</th><th colspan="2">'+T('sem2')+'</th><th colspan="2">'+T('annual')+'</th>'+EXTRA_FIELDS_FINAL.map(function(x){return '<th>'+extraLabel(x[0])+'</th>'}).join('')+'</tr><tr>';['FA1','FA2'].forEach(function(){html+='<th>'+T('marks')+' /'+faScale+'</th><th>'+T('grade')+'</th>'});html+='<th>'+T('marks')+' /'+saScale+'</th><th>'+T('grade')+'</th><th>'+T('marks')+' /50</th><th>'+T('grade')+'</th>';['FA3','FA4'].forEach(function(){html+='<th>'+T('marks')+' /'+faScale+'</th><th>'+T('grade')+'</th>'});html+='<th>'+T('marks')+' /'+saScale+'</th><th>'+T('grade')+'</th><th>'+T('marks')+' /50</th><th>'+T('grade')+'</th><th>'+T('marks')+' /100</th><th>'+T('grade')+'</th></tr></thead><tbody>';d.students.filter(function(st){return st.status!=='Transferred'}).forEach(function(st,i){var v={};ASSESSMENTS.forEach(function(a){v[a]=teacherValueFinal(d,st,subject,a,c)});var sem1=Number(v.FA1.mark||0)+Number(v.FA2.mark||0)+Number(v.SA1.mark||0),sem2=Number(v.FA3.mark||0)+Number(v.FA4.mark||0)+Number(v.SA2.mark||0),annual=sem1+sem2;html+='<tr><td>'+ (i+1)+'</td><td class="name">'+escapeHTML(st.name)+studentMeta(st)+'</td>';['FA1','FA2','SA1'].forEach(function(a){html+='<td>'+(v[a].mark===null?'-':v[a].mark)+'</td><td>'+v[a].grade+'</td>'});html+='<td>'+fmt2(sem1)+'</td><td>'+gradeByMax(sem1,50)+'</td>';['FA3','FA4','SA2'].forEach(function(a){html+='<td>'+(v[a].mark===null?'-':v[a].mark)+'</td><td>'+v[a].grade+'</td>'});html+='<td>'+fmt2(sem2)+'</td><td>'+gradeByMax(sem2,50)+'</td><td>'+fmt2(annual)+'</td><td>'+gradeByMax(annual,100)+'</td>'+EXTRA_FIELDS_FINAL.map(function(x){return '<td>'+extraInputFinal(c,s,st.id,x[0])+'</td>'}).join('')+'</tr>'});html+='</tbody></table></div>';reportTable.innerHTML=html;bindExtraInputsFinal(reportTable);updateTeacherExtraFinal();};
 
   /* Fix the teacher report syntax by restoring the intended final function if parsing reaches here. */
   /* Unicode-safe PDF: render the actual report DOM, so Kannada and edited activity fields are preserved. */
@@ -2703,6 +2757,107 @@ try { fmt2 = window.fmt2; } catch(e) {}
  const html=`<!doctype html><html><head><meta charset="utf-8"><title>Transfer Certificate</title><style>@page{size:A4 portrait;margin:8mm}body{font-family:Arial,'Nirmala UI',sans-serif;color:#111;margin:0}.tc{border:2px solid #222;padding:12px}h1,h2,p{text-align:center;margin:4px}.meta{text-align:right;font-weight:bold}.grid{width:100%;border-collapse:collapse;font-size:11px}.grid td{border:1px solid #555;padding:5px;vertical-align:top}.grid div{font-weight:600;margin-top:3px}.sign{display:flex;justify-content:space-between;margin-top:35px;font-weight:bold}.small{font-size:10px}@media print{button{display:none}}</style></head><body><div class="tc"><h2>EDUCATION DEPARTMENT - KARNATAKA STATE</h2><h1>TRANSFER CERTIFICATE / ವರ್ಗಾವಣೆ ಪ್ರಮಾಣ ಪತ್ರ</h1><p>(PRIMARY / HIGH / HIGHER SECONDARY SCHOOL)</p><div class="meta">TC No: ${v('v85TcNo')} / ${v('v85Year')}</div><table class="grid"><tr><td><b>1. Name of School / ಶಾಲೆಯ ಹೆಸರು</b><div>${v('v85School')}</div></td><td><b>2. Admission No.</b><div>${v('v85Adm')}</div></td></tr><tr><td colspan="2"><b>3. Cumulative Record No.</b><div>${v('v85Cr')}</div></td></tr><tr><td colspan="2"><b>4. Name of Pupil in Full / ವಿದ್ಯಾರ್ಥಿಯ ಪೂರ್ಣ ಹೆಸರು</b><div>${v('v85Name')}</div></td></tr><tr><td>5. Place of Birth<div>${v('v85BirthPlace')}</div></td><td>6. Taluk / 7. District<div>${v('v85Taluk')} / ${v('v85District')}</div></td></tr><tr><td>8. State<div>${v('v85State')}</div></td><td>9. Sex / 10. Nationality<div>${v('v85Sex')} / ${v('v85Nationality')}</div></td></tr><tr><td>11. Religion / 12. Caste / 13. Sub Caste<div>${v('v85Religion')} / ${v('v85Caste')} / ${v('v85SubCaste')}</div></td><td>Category<div>${v('v85Category')}</div></td></tr><tr><td>14. Father Name<div>${v('v85Father')}</div></td><td>15. Mother Name<div>${v('v85Mother')}</div></td></tr><tr><td>16. Belongs to SC/ST?<div>${v('v85Scst')}</div></td><td>17. Qualified for Promotion?<div>${v('v85Promotion')}</div></td></tr><tr><td colspan="2">18. Date of Birth: ${v('v85Dob')} &nbsp; In Words: ${v('v85DobWords')}</td></tr><tr><td>19. Standard Leaving<div>${v('v85LeavingClass')}</div></td><td>20. Medium<div>${v('v85Medium')}</div></td></tr><tr><td>21. Admission Date<div>${v('v85AdmissionDate')}</div></td><td>22. Fees Dues Paid?<div>${v('v85Fees')}</div></td></tr><tr><td>23. Fee Concession<div>${v('v85Concession')}</div></td><td>24. Scholarship<div>${v('v85Scholarship')}</div></td></tr><tr><td>25. Medical Examined?<div>${v('v85Medical')}</div></td><td>26. Last Attendance Date<div>${v('v85LastAttend')}</div></td></tr><tr><td>27. TC Application Date<div>${v('v85Application')}</div></td><td>28. Issue Date<div>${v('v85Issue')}</div></td></tr><tr><td>29. Total Working Days<div>${v('v85TotalDays')}</div></td><td>30. Days Attended<div>${v('v85DaysAttended')}</div></td></tr><tr><td colspan="2">31. Character & Conduct<div>${v('v85Character')}</div></td></tr><tr><td>32. SATS No.<div>${v('v85Sats')}</div></td><td>33. PEN ID Number<div>${v('v85Pen')}</div></td></tr><tr><td>34. APAAR ID Number<div>${v('v85Apaar')}</div></td><td>35. Student Aadhaar<div>${v('v85StudentAadhaar')}</div></td></tr><tr><td>36. Father Aadhaar<div>${v('v85FatherAadhaar')}</div></td><td>37. Mother Aadhaar<div>${v('v85MotherAadhaar')}</div></td></tr></table><div class="sign"><span>Parent / Guardian Signature</span><span>Head Teacher Signature</span></div></div><script>window.onload=()=>setTimeout(()=>window.print(),300)<\/script></body></html>`;const w=window.open('','_blank');w.document.write(html);w.document.close();};
 })();
 </script>
+
+
+<!-- =========================================================
+ v273 HM PHONE PERSISTENCE + SETTINGS ROLE LOCK
+ - Preserve v272 tested access flow.
+ - HM/registered phone persists by UDISE and mirrors school registry.
+ - Teacher may view Settings, but only Head Teacher may edit Settings.
+========================================================= -->
+<style id="v273SettingsRoleStyle">
+body.v273-teacher-settings #settings input,
+body.v273-teacher-settings #settings textarea,
+body.v273-teacher-settings #settings select{background:#f3f4f6!important;color:#4b5563!important;cursor:not-allowed!important}
+</style>
+<script id="v273HmPhoneSettingsRoleFix">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v273-HM-PHONE-SETTINGS-ROLE-FIXED';
+const HEAD_MODE='cce_v107_head_mode', ADMIN_SESSION='TFCCE_V110_ADMIN_SESSION', TEACHER_SESSION='TFCCE_V190_TEACHER_SESSION';
+const SCHOOL_STORE='TFCCE_V110_SCHOOLS';
+function isHead(){return sessionStorage.getItem(HEAD_MODE)==='1'||sessionStorage.getItem(ADMIN_SESSION)==='1'}
+function isTeacher(){try{return !!JSON.parse(sessionStorage.getItem(TEACHER_SESSION)||'null')}catch(e){return false}}
+function udise(){try{return String(db?.school?.udise||document.getElementById('udise')?.value||'').trim()}catch(e){return''}}
+function phoneKey(){return 'TFCCE_HM_PHONE_'+udise()}
+function cleanPhone(v){return String(v||'').replace(/[^0-9+]/g,'').slice(0,15)}
+function readRegistry(){try{return JSON.parse(localStorage.getItem(SCHOOL_STORE)||'[]')}catch(e){return[]}}
+function writeRegistry(a){try{localStorage.setItem(SCHOOL_STORE,JSON.stringify(a))}catch(e){}}
+function getPhone(){
+  let p='';
+  try{p=String(db?.school?.registeredMobile||db?.school?.hmPhone||'').trim()}catch(e){}
+  if(!p){try{p=String(localStorage.getItem(phoneKey())||'').trim()}catch(e){}}
+  if(!p){const u=udise(),r=readRegistry().find(x=>String(x.udise||'').trim()===u);p=String(r?.mobile||r?.hmPhone||'').trim()}
+  return p;
+}
+function ensurePhoneField(){
+  const u=document.getElementById('udise'); if(!u)return null;
+  let el=document.getElementById('v99RegisteredMobile');
+  if(!el){
+    const f=u.closest('.field'); if(!f)return null;
+    const wrap=document.createElement('div');wrap.className='field';
+    wrap.innerHTML='<label>Head Teacher Mobile / ಮುಖ್ಯ ಶಿಕ್ಷಕರ ಮೊಬೈಲ್</label><input id="v99RegisteredMobile" inputmode="numeric" placeholder="Head Teacher mobile number">';
+    f.insertAdjacentElement('afterend',wrap);el=document.getElementById('v99RegisteredMobile');
+  }
+  return el;
+}
+function loadPhone(){
+  const el=ensurePhoneField(); if(!el)return;
+  const p=getPhone(); if(p)el.value=p;
+}
+function persistPhone(){
+  if(!isHead())return;
+  const el=ensurePhoneField(); if(!el)return;
+  const p=cleanPhone(el.value); el.value=p;
+  try{db.school=db.school||{};db.school.registeredMobile=p;db.school.hmPhone=p;if(typeof saveData==='function')saveData()}catch(e){}
+  try{if(udise())localStorage.setItem(phoneKey(),p)}catch(e){}
+  const u=udise(); if(u){
+    const a=readRegistry();const i=a.findIndex(x=>String(x.udise||'').trim()===u);
+    if(i>=0){a[i]=Object.assign({},a[i],{mobile:p,hmPhone:p});writeRegistry(a)}
+  }
+}
+function applySettingsRole(){
+  const sec=document.getElementById('settings');if(!sec)return;
+  const head=isHead(), teacher=isTeacher()&&!head;
+  document.body.classList.toggle('v273-teacher-settings',teacher);
+  sec.querySelectorAll('input,textarea,select').forEach(function(el){
+    if(teacher){el.disabled=true;el.setAttribute('data-v273-locked','1')}
+    else if(head && el.getAttribute('data-v273-locked')==='1'){el.disabled=false;el.removeAttribute('data-v273-locked')}
+  });
+  sec.querySelectorAll('button').forEach(function(b){
+    const z=(b.getAttribute('onclick')||'')+' '+(b.textContent||'');
+    if(/saveSettings|resetData|Save Settings|Reset All Data/i.test(z))b.style.display=head?'':'none';
+  });
+}
+const oldSave=window.saveSettings;
+if(typeof oldSave==='function'){
+  window.saveSettings=function(){
+    if(!isHead()){alert('ಈ Settings ಬದಲಾವಣೆ Head Teacherಗೆ ಮಾತ್ರ ಲಭ್ಯ.');return false}
+    persistPhone();
+    const r=oldSave.apply(this,arguments);
+    persistPhone();
+    return r;
+  };
+  try{saveSettings=window.saveSettings}catch(e){}
+}
+const oldLoad=window.loadSettings;
+if(typeof oldLoad==='function'){
+  window.loadSettings=function(){const r=oldLoad.apply(this,arguments);setTimeout(function(){loadPhone();applySettingsRole()},80);return r};
+  try{loadSettings=window.loadSettings}catch(e){}
+}
+const oldShow=window.showPage;
+if(typeof oldShow==='function'){
+  window.showPage=function(page){const r=oldShow.apply(this,arguments);if(page==='settings')setTimeout(function(){loadPhone();applySettingsRole()},120);return r};
+  try{showPage=window.showPage}catch(e){}
+}
+const oldRole=window.v190ApplyRoleUI;
+if(typeof oldRole==='function')window.v190ApplyRoleUI=function(){const r=oldRole.apply(this,arguments);setTimeout(function(){loadPhone();applySettingsRole()},80);return r};
+function init(){loadPhone();applySettingsRole()}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){setTimeout(init,500)});else setTimeout(init,500);
+window.addEventListener('load',function(){setTimeout(init,800)});
+})();
+</script>
+
 </body>
 </html>
 <script>
@@ -2761,7 +2916,7 @@ try { fmt2 = window.fmt2; } catch(e) {}
  window.renderReport=renderV28;
  try{renderReport=renderV28}catch(e){}
  var st=document.createElement("style");
- st.textContent='#reportTable .teacherConsolidatedWide{font-size:10.5px!important;line-height:1.22!important}#reportTable .teacherConsolidatedWide th{font-size:10px!important;font-weight:700!important;padding:5px 3px!important}#reportTable .teacherConsolidatedWide td{font-size:10.5px!important;padding:5px 3px!important}#reportTable .teacherConsolidatedWide .name{width:145px!important;min-width:145px!important;text-align:left!important}#reportTable .teacherConsolidatedWide .studentV28{font-size:12.5px!important;font-weight:800!important;line-height:1.25!important}#reportTable .teacherConsolidatedWide .student-meta{font-size:8.5px!important;font-weight:500!important;margin-top:3px!important}#reportTable .teacherConsolidatedWide .markV28{font-size:11.5px!important;font-weight:700!important}#reportTable .teacherConsolidatedWide .gradeV28{font-size:11px!important;font-weight:700!important}@media print{#reportTable .teacherConsolidatedWide{font-size:8.5pt!important}#reportTable .teacherConsolidatedWide th{font-size:8pt!important;padding:3px 2px!important}#reportTable .teacherConsolidatedWide td{font-size:8.5pt!important;padding:3px 2px!important}#reportTable .teacherConsolidatedWide .studentV28{font-size:10pt!important;font-weight:800!important}}';
+ st.textContent='#reportTable .teacherConsolidatedWide{font-size:10.5px!important;line-height:1.22!important}#reportTable .teacherConsolidatedWide th{font-size:10px!important;font-weight:700!important;padding:5px 3px!important}#reportTable .teacherConsolidatedWide td{font-size:10.5px!important;padding:5px 3px!important}#reportTable .teacherConsolidatedWide .name{width:145px!important;min-width:145px!important;text-align:left!important}#reportTable .teacherConsolidatedWide .studentV28{font-size:12.5px!important;font-weight:800!important;line-height:1.25!important}#reportTable .teacherConsolidatedWide .student-meta{font-size:8.5px!important;font-weight:500!important;margin-top:3px!important}#reportTable .teacherConsolidatedWide .markV28{font-size:11.5px!important;font-weight:700!important}#reportTable .teacherConsolidatedWide .gradeV28{font-size:11px!important;font-weight:700!important}@media print{#reportTable .teacherConsolidatedWide{font-size:8.5pt!important}#reportTable .teacherConsolidatedWide th{font-size:8pt!important;padding:5px 2px!important}#reportTable .teacherConsolidatedWide td{font-size:8.5pt!important;padding:5px 2px!important}#reportTable .teacherConsolidatedWide .studentV28{font-size:10pt!important;font-weight:800!important}}';
  document.head.appendChild(st);
 })();
 </script>
@@ -3507,7 +3662,7 @@ try { fmt2 = window.fmt2; } catch(e) {}
         '<td>'+(i+1)+'</td><td>'+e(st.admission||'')+'</td><td class="v87-name">'+e(st.name||'')+'</td>'+
         '<td>'+e(m.gender||'')+'</td><td>'+e(m.dob||'')+'</td><td>'+e(st.sats||m.sats||'')+'</td><td>'+e(st.pen||m.pen||'')+'</td>'+
         '<td>'+e(cat)+'</td><td>'+e(m.cwsn||'No / ಇಲ್ಲ')+'</td><td>'+e(m.fatherName||'')+'</td><td>'+e(m.motherName||'')+'</td><td>'+e(m.mobile||'')+'</td>'+
-        '<td class="no-print"><div class="v87-actions"><button class="btn success" type="button" onclick="v87OpenTC(\''+e(st.id)+'\')">TC</button><button class="btn" type="button" onclick="editStudentMaster(\''+e(st.id)+'\')">Edit</button><button class="btn danger" type="button" onclick="v87DeleteStudent(\''+e(st.id)+'\')">Delete</button></div></td>'+
+        '<td class="no-print"><div class="v87-actions"><button class="btn success" type="button" onclick="v87OpenTC(\''+e(st.id)+'\')">TC</button><button class="btn" type="button" onclick="editStudentMaster(\''+e(st.id)+'\')">✏️ Edit / Update</button><button class="btn danger" type="button" onclick="v87DeleteStudent(\''+e(st.id)+'\')">Delete</button></div></td>'+
         '</tr>';
     });
     h+='</tbody></table></div>'; studentTable.innerHTML=h;
@@ -3547,15 +3702,28 @@ try { fmt2 = window.fmt2; } catch(e) {}
  window.v84ClearForm=function(){if(oldClear)oldClear();['v88NameKn','v88FatherKn','v88MotherKn'].forEach(id=>{if($(id))$(id).value=''})};
  const oldSave=window.v84SaveStudent;
  window.v84SaveStudent=function(){
+   /* v219 fix: capture Edit ID + bilingual fields BEFORE the base save clears the form. */
+   const editId=($('v84EditId')?.value||'').trim();
+   const c=studentClass.value,s=studentSection.value,d=getClassSection(c,s);
+   const beforeIds=new Set(d.students.map(x=>String(x.id)));
    const en=($('v84Name')?.value||'').trim(), kn=($('v88NameKn')?.value||'').trim();
+   const fatherKn=($('v88FatherKn')?.value||'').trim();
+   const motherKn=($('v88MotherKn')?.value||'').trim();
    if(!en && !kn){alert(lang()==='kn'?'ವಿದ್ಯಾರ್ಥಿಯ ಹೆಸರನ್ನು ಕನ್ನಡ ಅಥವಾ English ನಲ್ಲಿ ನಮೂದಿಸಿ.':'Enter the student name in English or Kannada.');return}
    if(!en && $('v84Name')) $('v84Name').value=kn;
    oldSave();
-   const c=studentClass.value,s=studentSection.value,d=getClassSection(c,s);
-   let st=d.students[d.students.length-1];
-   const editId=$('v84EditId')?.value;
-   if(editId) st=d.students.find(x=>x.id===editId)||st;
-   if(st){st.master=st.master||{};st.master.nameEn=en||st.master.nameEn||st.name||'';st.master.nameKn=kn;st.master.fatherNameEn=st.master.fatherName||'';st.master.fatherNameKn=($('v88FatherKn')?.value||'').trim();st.master.motherNameEn=st.master.motherName||'';st.master.motherNameKn=($('v88MotherKn')?.value||'').trim();saveData();}
+   let st=editId?d.students.find(x=>String(x.id)===String(editId)):d.students.find(x=>!beforeIds.has(String(x.id)));
+   if(!st && !editId) st=d.students[d.students.length-1];
+   if(st){
+     st.master=st.master||{};
+     st.master.nameEn=en||st.master.nameEn||st.name||'';
+     st.master.nameKn=kn;
+     st.master.fatherNameEn=st.master.fatherNameEn||st.master.fatherName||'';
+     st.master.fatherNameKn=fatherKn;
+     st.master.motherNameEn=st.master.motherNameEn||st.master.motherName||'';
+     st.master.motherNameKn=motherKn;
+     saveData();
+   }
    try{renderStudents()}catch(e){}
  };
  const oldEdit=window.editStudentMaster;
@@ -10633,7 +10801,8 @@ function showExisting159(ex){
   '<style>body{font-family:Arial,sans-serif;padding:20px}table{border-collapse:collapse;width:100%}td{border:1px solid #ddd;padding:8px}td:first-child{font-weight:bold;background:#f7f7f7;width:35%}</style>'+
   '</head><body><h2>Existing Former Student Record</h2><table>'+
   rows.map(r=>'<tr><td>'+esc159(r[0])+'</td><td>'+esc159(r[1])+'</td></tr>').join('')+
-  '</table></body></html>');
+  '</table>
+</body></html>');
   w.document.close();
 }
 function merge159(ex,p){
@@ -13992,14 +14161,26 @@ async function pushRow(u,secret,dataObj,metaOverride){
     sync_key_hash:syncHash,
     updated_at:new Date().toISOString()
   };
-  const r=await fetch(cfg.url+'/rest/v1/cce_app_data',{
-    method:'POST',
-    headers:headers(cfg.key,{
-      'x-school-sync-key':secret,
-      Prefer:'resolution=merge-duplicates,return=representation'
-    }),
-    body:JSON.stringify(body)
-  });
+  const baseHeaders=headers(cfg.key,{'x-school-sync-key':secret});
+  // v207: avoid POST upsert against an existing row. Supabase RLS evaluates
+  // UPDATE USING during an upsert; first determine whether this school's row exists.
+  const check=await fetch(cfg.url+'/rest/v1/cce_app_data?id=eq.'+encodeURIComponent(id)+'&select=id',{method:'GET',headers:baseHeaders});
+  if(!check.ok)throw new Error(await check.text());
+  const rows=await check.json();
+  let r;
+  if(Array.isArray(rows)&&rows.length){
+    r=await fetch(cfg.url+'/rest/v1/cce_app_data?id=eq.'+encodeURIComponent(id),{
+      method:'PATCH',
+      headers:headers(cfg.key,{'x-school-sync-key':secret,Prefer:'return=representation'}),
+      body:JSON.stringify(body)
+    });
+  }else{
+    r=await fetch(cfg.url+'/rest/v1/cce_app_data',{
+      method:'POST',
+      headers:headers(cfg.key,{'x-school-sync-key':secret,Prefer:'return=representation'}),
+      body:JSON.stringify(body)
+    });
+  }
   if(!r.ok)throw new Error(await r.text());
   return r;
 }
@@ -15128,6 +15309,21 @@ async function smartCloudLoad(reason){
 }
 
 window.v187SmartCloudLoad=function(){return smartCloudLoad('manual')};
+/* v211 recovery: explicit cloud reload after the user has downloaded a current backup. */
+window.v187ForceCloudLoad=async function(){
+  const u=currentUdise();
+  if(!u){ alert('ಮೊದಲು School Login ಮಾಡಿ.'); return false; }
+  try{
+    await clearAllPending(u);
+    try{localStorage.removeItem(LAST_SYNC_PREFIX+u)}catch(e){}
+    try{localStorage.removeItem(OLD_LAST_SYNC_PREFIX+u)}catch(e){}
+    return await smartCloudLoad('force-recovery');
+  }catch(e){
+    console.warn('v211 force cloud load',e);
+    setPill('☁ Smart Cloud: Reload failed','bad');
+    return false;
+  }
+};
 
 /* Clear old queue entries after a successful secure sync. */
 const oldSecureSync=window.v131SyncCurrentSchool;
@@ -17759,9 +17955,16 @@ async function putCloudRow(u,secret,row,payload){
     sync_key_hash:syncHash,
     updated_at:new Date().toISOString()
   };
-  const r=await fetch(cfg.url+'/rest/v1/cce_app_data',{
-    method:'POST',headers:headers(cfg.key,{'x-school-sync-key':secret,Prefer:'resolution=merge-duplicates,return=representation'}),body:JSON.stringify(body)
-  });
+  let r;
+  if(row&&row.id){
+    r=await fetch(cfg.url+'/rest/v1/cce_app_data?id=eq.'+encodeURIComponent(id),{
+      method:'PATCH',headers:headers(cfg.key,{'x-school-sync-key':secret,Prefer:'return=representation'}),body:JSON.stringify(body)
+    });
+  }else{
+    r=await fetch(cfg.url+'/rest/v1/cce_app_data',{
+      method:'POST',headers:headers(cfg.key,{'x-school-sync-key':secret,Prefer:'return=representation'}),body:JSON.stringify(body)
+    });
+  }
   if(!r.ok)throw new Error(await r.text());
   return true;
 }
@@ -18026,3 +18229,989 @@ setInterval(function(){try{updateAdminPanel();relabelButtons()}catch(e){}},2500)
 })();
 </script>
 
+
+<!-- v208: Restore explicit Owner / Master Control access on School Login. -->
+<style id="v208OwnerAccessStyle">
+#v208OwnerAccess{margin:12px 0 4px;text-align:center;border-top:1px solid #e3e9f2;padding-top:12px}
+#v208OwnerAccess button{border:0;border-radius:9px;padding:9px 14px;background:#273a78;color:#fff;font-weight:800;cursor:pointer}
+#v208OwnerAccess small{display:block;margin-top:6px;color:#64748b;font-size:11px}
+</style>
+<script id="v208OwnerAccessScript">
+(function(){
+'use strict';
+function installOwnerAccess(){
+  const login=document.getElementById('v110SchoolLogin');
+  if(!login)return;
+  const body=login.querySelector('.v110-body');
+  if(!body)return;
+  let box=document.getElementById('v208OwnerAccess');
+  if(!box){
+    box=document.createElement('div');
+    box.id='v208OwnerAccess';
+    box.innerHTML='<button type="button" id="v208OwnerBtn">👑 Owner / Master Control</button><small>Master Admin only</small>';
+    body.appendChild(box);
+    const btn=document.getElementById('v208OwnerBtn');
+    if(btn)btn.addEventListener('click',function(){
+      login.style.display='none';
+      login.setAttribute('aria-hidden','true');
+      if(typeof window.v110OpenAdminGate==='function') window.v110OpenAdminGate();
+      else alert('Master Admin setup is not available.');
+    });
+  }
+  box.style.display='block';
+}
+const oldOpen=window.v110OpenSchoolLogin;
+if(typeof oldOpen==='function'){
+  window.v110OpenSchoolLogin=function(){
+    const r=oldOpen.apply(this,arguments);
+    setTimeout(installOwnerAccess,20);
+    return r;
+  };
+}
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>setTimeout(installOwnerAccess,800));
+else setTimeout(installOwnerAccess,300);
+window.addEventListener('load',()=>setTimeout(installOwnerAccess,1000));
+setInterval(function(){
+  const login=document.getElementById('v110SchoolLogin');
+  if(login && getComputedStyle(login).display!=='none') installOwnerAccess();
+},1200);
+})();
+</script>
+
+<!-- v211: Safe Smart Cloud Review UI + cloud reload recovery fallback. Appended after v208 final script to avoid breaking legacy document.write strings. -->
+<style id="v210CloudReviewStyle">
+#v187SmartCloudPill{cursor:pointer;user-select:none}
+#v210CloudReviewOverlay{position:fixed;inset:0;background:rgba(15,23,42,.50);z-index:2147483000;display:none;align-items:center;justify-content:center;padding:18px}
+#v210CloudReviewBox{width:min(640px,96vw);max-height:88vh;overflow:auto;background:#fff;border-radius:14px;box-shadow:0 18px 55px #0005;padding:18px;color:#172033;font-family:inherit}
+#v210CloudReviewBox h3{margin:0 0 10px;color:#174a8b}
+#v210CloudReviewBox .note{background:#fff8df;border-left:4px solid #e0a800;padding:10px 12px;margin:10px 0;border-radius:6px;line-height:1.55}
+#v210CloudReviewBox .safe{background:#eefaf2;border-left:4px solid #22a06b;padding:10px 12px;margin:10px 0;border-radius:6px;line-height:1.55}
+#v210CloudReviewBox .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+#v210CloudReviewBox button{border:0;border-radius:8px;padding:9px 12px;font-weight:700;cursor:pointer}
+#v210Check{background:#0d6efd;color:#fff} #v210Backup{background:#198754;color:#fff} #v210Cloud{background:#6f42c1;color:#fff} #v210Close{background:#e9ecef;color:#172033}
+#v210CloudReviewStatus{font-size:12px;color:#475569;margin-top:10px;min-height:18px;line-height:1.45}
+</style>
+<script id="v210SmartCloudReviewFix">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v211';
+function pill(){return document.getElementById('v187SmartCloudPill')}
+function reviewState(){const p=pill();return !!p && /review needed|cloud changed/i.test(p.textContent||'')}
+function ensureDialog(){
+  let ov=document.getElementById('v210CloudReviewOverlay');
+  if(ov)return ov;
+  ov=document.createElement('div'); ov.id='v210CloudReviewOverlay';
+  ov.innerHTML='<div id="v210CloudReviewBox" role="dialog" aria-modal="true">'+
+    '<h3>☁ Smart Cloud — Review</h3>'+
+    '<div class="note"><b>Cloud ಮತ್ತು ಈ device data ನಡುವೆ ಬದಲಾವಣೆ ಕಂಡಿದೆ.</b><br>Data overwrite ಆಗದಂತೆ Smart Cloud Auto Sync ತಾತ್ಕಾಲಿಕವಾಗಿ ನಿಲ್ಲಿಸಿದೆ.</div>'+
+    '<div class="safe">ಮೊದಲು <b>Check Again</b> ಒತ್ತಿರಿ. ಸಮಸ್ಯೆ ಉಳಿದಿದ್ದರೆ cloud copy ತೆಗೆದುಕೊಳ್ಳುವ ಮೊದಲು <b>Download Current Backup</b> ಮಾಡುವುದು ಸುರಕ್ಷಿತ.</div>'+
+    '<div class="actions"><button id="v210Check" type="button">🔎 Check Again</button><button id="v210Backup" type="button">⬇ Download Current Backup</button><button id="v210Cloud" type="button">☁ Reload Latest Cloud</button><button id="v210Close" type="button">Close</button></div>'+
+    '<div id="v210CloudReviewStatus"></div></div>';
+  document.body.appendChild(ov);
+  const status=()=>document.getElementById('v210CloudReviewStatus');
+  document.getElementById('v210Close').onclick=()=>{ov.style.display='none'};
+  ov.addEventListener('click',e=>{if(e.target===ov)ov.style.display='none'});
+  document.getElementById('v210Backup').onclick=function(){
+    const s=status(); if(s)s.textContent='Current device backup download ಆರಂಭಿಸಲಾಗಿದೆ.';
+    if(typeof window.v84DownloadBackup==='function') window.v84DownloadBackup();
+    else alert('Backup download function ಸಿಗಲಿಲ್ಲ.');
+  };
+  document.getElementById('v210Check').onclick=async function(){
+    const s=status(); if(s)s.textContent='Checking cloud and pending sync…';
+    try{
+      if(typeof window.v188ReconcilePending==='function') await window.v188ReconcilePending();
+      if(typeof window.v194AutoCloudSync==='function') await window.v194AutoCloudSync();
+      await new Promise(r=>setTimeout(r,700));
+      if(reviewState()){
+        if(s)s.textContent='Cloud change ಇನ್ನೂ ಇದೆ. Data ಸುರಕ್ಷತೆಗೆ ಮೊದಲು Current Backup download ಮಾಡಿ; ನಂತರ ಮಾತ್ರ Reload Latest Cloud ಬಳಸಿ.';
+      }else{
+        if(s)s.textContent='Check complete. Smart Cloud status update ಆಗಿದೆ.';
+      }
+    }catch(e){ if(s)s.textContent='Check ಪೂರ್ಣವಾಗಲಿಲ್ಲ. Internet connection ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.'; }
+  };
+  document.getElementById('v210Cloud').onclick=function(){
+    if(!confirm('Latest Cloud copy load ಮಾಡುವ ಮೊದಲು Current Backup download ಮಾಡಿದ್ದೀರಾ?\n\nOK ಒತ್ತಿದರೆ latest cloud data load ಆಗುತ್ತದೆ.'))return;
+    const s=status(); if(s)s.textContent='Latest cloud copy load ಮಾಡಲಾಗುತ್ತಿದೆ…';
+    if(typeof window.v182LoadLatestCloud==='function'){
+      window.v182LoadLatestCloud();
+    }else if(typeof window.v187ForceCloudLoad==='function'){
+      window.v187ForceCloudLoad();
+    }else if(typeof window.v187SmartCloudLoad==='function'){
+      window.v187SmartCloudLoad();
+    }else{
+      alert('Cloud Reload tool ಸಿಗಲಿಲ್ಲ. Page refresh ಮಾಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.');
+    }
+  };
+  return ov;
+}
+function openReview(){const ov=ensureDialog();ov.style.display='flex'}
+function wire(){
+  const p=pill(); if(!p)return;
+  p.title=reviewState()?'Click to review Smart Cloud changes':'Smart Cloud status';
+  if(p.dataset.v210wired==='1')return;
+  p.dataset.v210wired='1';
+  p.addEventListener('click',function(){if(reviewState())openReview()});
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(wire,900));
+else setTimeout(wire,400);
+window.addEventListener('load',()=>setTimeout(wire,900));
+setInterval(wire,1200);
+})();
+</script>
+
+<!-- v212: Technical cloud/status UI is Owner/Master-only. Background autosave/sync remains active for schools. -->
+<style id="v212MasterOnlyTechStyle">
+/* Never animate/blink the Smart Cloud status pill. */
+#v187SmartCloudPill{animation:none!important;transition:none!important}
+/* v212 JS decides visibility after session state is known. */
+</style>
+<script id="v212MasterOnlyTechScript">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v212';
+const ADMIN_SESSION='TFCCE_V110_ADMIN_SESSION';
+function isMaster(){
+  try{return sessionStorage.getItem(ADMIN_SESSION)==='1'}catch(e){return false}
+}
+function applyTechVisibility(){
+  const master=isMaster();
+  const wrap=document.getElementById('v130StatusWrap');
+  if(wrap){
+    wrap.style.display=master?'':'none';
+    wrap.setAttribute('aria-hidden',master?'false':'true');
+  }
+  const review=document.getElementById('v210CloudReviewOverlay');
+  if(review && !master) review.style.display='none';
+  const pill=document.getElementById('v187SmartCloudPill');
+  if(pill){
+    pill.style.animation='none';
+    pill.style.transition='none';
+  }
+}
+/* Keep all autosave/cloud logic running; only the technical display is hidden from school users. */
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded',function(){setTimeout(applyTechVisibility,250);setTimeout(applyTechVisibility,1200)});
+}else{
+  setTimeout(applyTechVisibility,100);
+}
+window.addEventListener('load',function(){setTimeout(applyTechVisibility,500)});
+setInterval(applyTechVisibility,1000);
+
+/* A school user must never open the Smart Cloud review dialog accidentally. */
+document.addEventListener('click',function(e){
+  const p=e.target&&e.target.closest?e.target.closest('#v187SmartCloudPill'):null;
+  if(p && !isMaster()){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+  }
+},true);
+})();
+</script>
+
+<!-- v213: Safe Cloud Login repair. Fixes v182 script parse error (duplicate async) so secure cloud login override can run. -->
+<script id="v213SafeCloudLoginMarker">
+window.TFCCE_VERSION='v213';
+</script>
+
+
+<!-- v216: Primary report subject alignment + Marks Card cum Progress Card. No CCE calculation changes. -->
+<style id="v216ProgressCardStyle">
+.pc-modal{position:fixed;inset:0;background:#0008;z-index:99999;padding:18px;overflow:auto}.pc-modal.hidden{display:none}.pc-dialog{width:min(1180px,96vw);margin:auto;background:#fff;border-radius:12px;padding:14px;box-sizing:border-box}.pc-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px}.pc-actions span{flex:1}.pc-card{border:2px solid #222;padding:12px;font-family:"Noto Sans Kannada","Nirmala UI",Arial,sans-serif}.pc-card h2,.pc-card h3{text-align:center!important;width:100%;margin:3px auto;display:block}.pc-card h3{font-weight:700}.pc-location-line{text-align:center;font-weight:700;margin:2px 0 5px}.pc-meta{display:grid;grid-template-columns:repeat(2,1fr);gap:5px;margin:10px 0;font-size:13px}.pc-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:10px}.pc-table th,.pc-table td{border:1px solid #333;padding:4px;text-align:center;word-break:break-word}.pc-table .pc-subject{text-align:left;font-weight:700}.pc-summary{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-top:10px;font-size:13px}.pc-sign{display:flex;justify-content:space-between;margin-top:35px;font-weight:700}@media(max-width:700px){.pc-meta,.pc-summary{grid-template-columns:1fr}.pc-table{font-size:8px}.pc-dialog{padding:6px}}@media print{body>*{display:none!important}#progressCardModal{display:block!important;position:static;background:#fff;padding:0}#progressCardModal .pc-dialog{width:100%;max-width:none;padding:0}.pc-actions{display:none!important}#progressCardBody{display:block!important}.pc-card{border:1px solid #222}@page{size:A4 landscape;margin:7mm}}
+</style>
+<script id="v217ProgressCardScript">
+(function(){
+ window.TFCCE_VERSION='v218';
+ const PC_TXT={
+  kn:{title:'ಅಂಕಪಟ್ಟಿ / ಪ್ರಗತಿ ಪತ್ರ',student:'ವಿದ್ಯಾರ್ಥಿಯ ಹೆಸರು',classSection:'ತರಗತಿ / ವಿಭಾಗ',academicYear:'ಶೈಕ್ಷಣಿಕ ವರ್ಷ',dob:'ಜನ್ಮ ದಿನಾಂಕ',dobWords:'ಜನ್ಮ ದಿನಾಂಕ (ಅಕ್ಷರಗಳಲ್ಲಿ)',subject:'ವಿಷಯ',mark:'ಅಂಕ',annual:'ವಾರ್ಷಿಕ ಒಟ್ಟು',total:'ಒಟ್ಟು ಪಡೆದ ಅಂಕ',overall:'ಒಟ್ಟಾರೆ ಗ್ರೇಡ್',marksWords:'ಅಂಕಗಳು ಪದಗಳಲ್ಲಿ',result:'ಫಲಿತಾಂಶ',teacher:'ತರಗತಿ ಶಿಕ್ಷಕರ ಸಹಿ',head:'ಮುಖ್ಯ ಶಿಕ್ಷಕರ ಸಹಿ',noStudents:'ವಿದ್ಯಾರ್ಥಿಗಳಿಲ್ಲ.',pass:'ಉತ್ತೀರ್ಣ',fail:'ಅನುತ್ತೀರ್ಣ',subjects:{firstLanguage:'ಪ್ರಥಮ ಭಾಷೆ',secondLanguage:'ದ್ವಿತೀಯ ಭಾಷೆ',thirdLanguage:'ತೃತೀಯ ಭಾಷೆ',mathematics:'ಗಣಿತ',science:'ವಿಜ್ಞಾನ',evs:'ಪರಿಸರ ಅಧ್ಯಯನ',socialScience:'ಸಾಮಾಜಿಕ ವಿಜ್ಞಾನ'}},
+  en:{title:'Marks Card / Progress Card',student:'Student Name',classSection:'Class / Section',academicYear:'Academic Year',dob:'Date of Birth',dobWords:'Date of Birth (Words)',subject:'Subject',mark:'Marks',annual:'Annual Total',total:'Total Marks Obtained',overall:'Overall Grade',marksWords:'Marks in Words',result:'Result',teacher:'Class Teacher Signature',head:'Head Teacher Signature',noStudents:'No students.',pass:'Pass',fail:'Fail',subjects:{firstLanguage:'First Language',secondLanguage:'Second Language',thirdLanguage:'Third Language',mathematics:'Mathematics',science:'Science',evs:'Environmental Studies',socialScience:'Social Science'}}
+ };
+ function pcLang(){return ((db&&db.school&&db.school.language)||document.getElementById('appLanguage')?.value||'kn')==='en'?'en':'kn'}
+ function tx(){return PC_TXT[pcLang()]}
+ const kn1={0:'ಸೊನ್ನೆ',1:'ಒಂದು',2:'ಎರಡು',3:'ಮೂರು',4:'ನಾಲ್ಕು',5:'ಐದು',6:'ಆರು',7:'ಏಳು',8:'ಎಂಟು',9:'ಒಂಬತ್ತು',10:'ಹತ್ತು',11:'ಹನ್ನೊಂದು',12:'ಹನ್ನೆರಡು',13:'ಹದಿಮೂರು',14:'ಹದಿನಾಲ್ಕು',15:'ಹದಿನೈದು',16:'ಹದಿನಾರು',17:'ಹದಿನೇಳು',18:'ಹದಿನೆಂಟು',19:'ಹತ್ತೊಂಬತ್ತು',20:'ಇಪ್ಪತ್ತು',21:'ಇಪ್ಪತ್ತೊಂದು',22:'ಇಪ್ಪತ್ತೆರಡು',23:'ಇಪ್ಪತ್ತಮೂರು',24:'ಇಪ್ಪತ್ತನಾಲ್ಕು',25:'ಇಪ್ಪತ್ತೈದು',26:'ಇಪ್ಪತ್ತಾರು',27:'ಇಪ್ಪತ್ತೇಳು',28:'ಇಪ್ಪತ್ತೆಂಟು',29:'ಇಪ್ಪತ್ತೊಂಬತ್ತು',30:'ಮೂವತ್ತು',31:'ಮೂವತ್ತೊಂದು',40:'ನಲವತ್ತು',50:'ಐವತ್ತು',60:'ಅರವತ್ತು',70:'ಎಪ್ಪತ್ತು',80:'ಎಂಬತ್ತು',90:'ತೊಂಬತ್ತು'};
+ const knT={2:'ಇಪ್ಪತ್ತು',3:'ಮೂವತ್ತು',4:'ನಲವತ್ತು',5:'ಐವತ್ತು',6:'ಅರವತ್ತು',7:'ಎಪ್ಪತ್ತು',8:'ಎಂಬತ್ತು',9:'ತೊಂಬತ್ತು'},knH={1:'ನೂರು',2:'ಇನ್ನೂರು',3:'ಮುನ್ನೂರು',4:'ನಾಲ್ಕುನೂರು',5:'ಐನೂರು',6:'ಆರುನೂರು',7:'ಏಳುನೂರು',8:'ಎಂಟುನೂರು',9:'ಒಂಬೈನೂರು'};
+ function knU(n){if(kn1[n]!==undefined)return kn1[n];let a=Math.floor(n/10),b=n%10;return (knT[a]||'')+(b?' '+kn1[b]:'')}
+ function knNum(n){n=Number(n)||0;if(n<100)return knU(n);if(n<1000){let h=Math.floor(n/100),r=n%100;return knH[h]+(r?' '+knU(r):'')}if(n<10000){let q=Math.floor(n/1000),r=n%1000;return (q===1?'ಒಂದು':knU(q))+' ಸಾವಿರ'+(r?' '+knNum(r):'')}return String(n)}
+ const knM=['','ಜನವರಿ','ಫೆಬ್ರವರಿ','ಮಾರ್ಚ್','ಏಪ್ರಿಲ್','ಮೇ','ಜೂನ್','ಜುಲೈ','ಆಗಸ್ಟ್','ಸೆಪ್ಟೆಂಬರ್','ಅಕ್ಟೋಬರ್','ನವೆಂಬರ್','ಡಿಸೆಂಬರ್'];
+ const en1=['','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen'],enT=['','','Twenty','Thirty','Forty','Fifty','Sixty','Seventy','Eighty','Ninety'];
+ const enOrd=['','First','Second','Third','Fourth','Fifth','Sixth','Seventh','Eighth','Ninth','Tenth','Eleventh','Twelfth','Thirteenth','Fourteenth','Fifteenth','Sixteenth','Seventeenth','Eighteenth','Nineteenth','Twentieth','Twenty First','Twenty Second','Twenty Third','Twenty Fourth','Twenty Fifth','Twenty Sixth','Twenty Seventh','Twenty Eighth','Twenty Ninth','Thirtieth','Thirty First'];
+ const enM=['','January','February','March','April','May','June','July','August','September','October','November','December'];
+ function enU(n){return n<20?en1[n]:enT[Math.floor(n/10)]+(n%10?' '+en1[n%10]:'')}
+ function enNum(n){n=Number(n)||0;if(n<100)return enU(n);if(n<1000)return en1[Math.floor(n/100)]+' Hundred'+(n%100?' '+enU(n%100):'');if(n<10000)return enU(Math.floor(n/1000))+' Thousand'+(n%1000?' '+enNum(n%1000):'');return String(n)}
+ function isoDate(v){v=String(v||'').trim();if(/^\d{4}-\d{2}-\d{2}$/.test(v))return v;let m=v.match(/^(\d{1,2})[-\/.](\d{1,2})[-\/.](\d{4})$/);if(m)return m[3]+'-'+m[2].padStart(2,'0')+'-'+m[1].padStart(2,'0');return ''}
+ function pcDobWords(v,L){const z=isoDate(v);if(!z)return '';const [y,m,d]=z.split('-').map(Number);return L==='kn'?knNum(d)+' '+knM[m]+' '+knNum(y):enOrd[d]+' '+enM[m]+' '+enNum(y)}
+ function pcNumberWords(n,L){n=Math.round(Number(n)||0);return L==='kn'?knNum(n):enNum(n)}
+ function pcStudentName(st,L){const m=st?.master||{};if(L==='kn'){if(typeof findKannadaStudentName158==='function'){const k=findKannadaStudentName158(st);if(k)return k}return m.nameKn||m.nameEn||st?.name||st?.studentName||''}if(typeof findEnglishStudentName158==='function'){const e=findEnglishStudentName158(st);if(e)return e}return m.nameEn||st?.name||st?.studentName||m.nameKn||''}
+ window.openProgressCard=function(){const c=String(school910Class.value||'1'),s=school910Section.value||'A',d=getClassSection(c,s),sel=document.getElementById('pcStudent');const active=d.students.filter(st=>st.status!=='Transferred');sel.innerHTML=active.map(st=>`<option value="${escapeHTML(st.id)}">${escapeHTML(st.name)}</option>`).join('');document.getElementById('progressCardModal').classList.remove('hidden');renderProgressCard()};
+ window.closeProgressCard=function(){document.getElementById('progressCardModal').classList.add('hidden')}; window.printProgressCard=function(){window.print()};
+ function pcSubjects(c){const S=tx().subjects;return Number(c)<=5?[["firstLanguage",S.firstLanguage],["secondLanguage",S.secondLanguage],["mathematics",S.mathematics],["science",S.evs]]:[["firstLanguage",S.firstLanguage],["secondLanguage",S.secondLanguage],["thirdLanguage",S.thirdLanguage],["mathematics",S.mathematics],["science",S.science],["socialScience",S.socialScience]]}
+ function pcVal(d,st,key,a,c){
+   /* v237: Marks Card assessment values must be the same values used by School Consolidated. */
+   if(Number(c)<=8) return schoolDisplayedAssessment(d,st,key,a,c);
+   const r=d.marks?.[st.id]?.[key]?.[a];
+   if(!r)return {mark:null,grade:'-'};
+   if(a.startsWith('FA')){
+     const z=fa910Summary(r,a), mark=Number(z.total.toFixed(2));
+     return {mark:mark,grade:gradeByMax(mark,50)};
+   }
+   const mark=Number(r.total||0);
+   return {mark:mark||null,grade:mark?gradeByMax(mark,100):'-'};
+ }
+ function pc910Calc(d,st,key){
+   const m=d.marks&&d.marks[st.id]&&d.marks[st.id][key]||{};
+   function fa(a){return fa910Summary(m[a]||{},a).total}
+   const fa1=fa('FA1'),fa2=fa('FA2'),fa3=fa('FA3'),fa4=fa('FA4');
+   const sa1=Number(m.SA1&&m.SA1.total||0),sa2=Number(m.SA2&&m.SA2.total||0);
+   const saMax=get910SAMax(key),fm=key==='firstLanguage'?25:20;
+   const f1=Number(((fa1+fa2)*fm/100).toFixed(2));
+   const f2=Number(((fa3+fa4)*fm/100).toFixed(2));
+   const e1=Number((saMax===100?sa1*.8:sa1).toFixed(2));
+   const e2=Number((saMax===100?sa2*.8:sa2).toFixed(2));
+   const t1=Number((e1+f1).toFixed(2)),t2=Number((e2+f2).toFixed(2));
+   const tm=key==='firstLanguage'?125:100;
+   return {fa1,fa2,fa3,fa4,sa1,sa2,saMax,fm,e1,e2,f1,f2,t1,t2,tm,annual:Number((t1+t2).toFixed(2)),annualMax:tm*2};
+ }
+ function pcAnnualValue(d,st,key,c){
+   if(Number(c)>=9)return pc910Calc(d,st,key);
+   const list=['FA1','FA2','SA1','FA3','FA4','SA2'];
+   const vals=list.map(a=>schoolDisplayedAssessment(d,st,key,a,c)).filter(x=>x.mark!==null);
+   return {annual:vals.length?Number(vals.reduce((sum,x)=>sum+Number(x.mark||0),0).toFixed(2)):null,annualMax:100};
+ }
+ window.renderProgressCard=function(){
+   const L=pcLang(),T=tx(),c=String(school910Class.value||'1'),s=school910Section.value||'A',d=getClassSection(c,s),id=document.getElementById('pcStudent').value,st=d.students.find(x=>String(x.id)===String(id));
+   if(!st){document.getElementById('progressCardBody').innerHTML='<div class="notice">'+T.noStudents+'</div>';return}
+   const m=st.master||{},subs=pcSubjects(c),ass=['FA1','FA2','SA1','FA3','FA4','SA2'];let grand=0,grandMax=0,has=false;
+   const is910=Number(c)>=9;
+   let rows=subs.map(([key,label])=>{
+     if(is910){
+       /* v243: 9-10 card uses the SAME academic columns/calculation as School Consolidated v81; co-curricular columns are intentionally omitted. */
+       const mm=d.marks&&d.marks[st.id]&&d.marks[st.id][key]||{};
+       const fv=(a)=>{try{const r=mm&&mm[a];if(!r)return null;const q=fa910Summary(r,a),n=Number(q.total);return Number.isFinite(n)?n:null}catch(e){return null}};
+       const sv=(a)=>{try{const v=get910SAStored(c,s,key,a,st.id);if(v!==undefined&&v!==null&&v!==''&&Number.isFinite(Number(v)))return Number(v)}catch(e){} const r=mm&&mm[a];if(r){for(const z of ['saMark','exam','total']){if(r[z]!==undefined&&r[z]!==null&&r[z]!==''&&Number.isFinite(Number(r[z])))return Number(r[z])}}return null};
+       const fa1=fv('FA1'),fa2=fv('FA2'),fa3=fv('FA3'),fa4=fv('FA4'),sa1=sv('SA1'),sa2=sv('SA2');
+       const first=key==='firstLanguage',iaMax=first?25:20,saMax=first?100:80,termMax=first?125:100;
+       const ok=(...v)=>v.every(q=>q!==null&&q!==''&&Number.isFinite(Number(q)));
+       const halfReady=ok(fa1,fa2,sa1), annualReady=ok(fa1,fa2,fa3,fa4,sa2);
+       const ia1=halfReady?Number(((fa1+fa2)/100*iaMax).toFixed(2)):null;
+       const halfTotal=halfReady?Number((sa1+ia1).toFixed(2)):null;
+       const ia2=annualReady?Number(((fa1+fa2+fa3+fa4)/200*iaMax).toFixed(2)):null;
+       const annualTotal=annualReady?Number((sa2+ia2).toFixed(2)):null;
+       const fmt=(v)=>v===null?'-':Number(v).toFixed(1);
+       const gfa=(v)=>v===null?'-':gradeByMax(Number(v),50);
+       const gterm=(v)=>{if(v===null)return '-';v=Number(v);if(termMax===125){if(v>=112)return'A+';if(v>=100)return'A';if(v>=87)return'B+';if(v>=75)return'B';if(v>=63)return'C+';if(v>=44)return'C';return'NC'}if(v>=90)return'A+';if(v>=80)return'A';if(v>=70)return'B+';if(v>=60)return'B';if(v>=50)return'C+';if(v>=35)return'C';return'NC'};
+       if([fa1,fa2,fa3,fa4,sa1,sa2].some(v=>v!==null))has=true;
+       if(annualTotal!==null){grand+=annualTotal;grandMax+=termMax;}
+       return `<tr><td class="pc-subject">${label}</td>`+
+         `<td>${fmt(fa1)}</td><td>${gfa(fa1)}</td>`+
+         `<td>${fmt(fa2)}</td><td>${gfa(fa2)}</td>`+
+         `<td>${sa1===null?'-':fmt(sa1)+' /'+saMax}</td><td>${ia1===null?'-':fmt(ia1)+' /'+iaMax}</td><td>${halfTotal===null?'-':fmt(halfTotal)+' /'+termMax}</td><td>${gterm(halfTotal)}</td>`+
+         `<td>${fmt(fa3)}</td><td>${gfa(fa3)}</td>`+
+         `<td>${fmt(fa4)}</td><td>${gfa(fa4)}</td>`+
+         `<td>${sa2===null?'-':fmt(sa2)+' /'+saMax}</td><td>${ia2===null?'-':fmt(ia2)+' /'+iaMax}</td><td>${annualTotal===null?'-':fmt(annualTotal)+' /'+termMax}</td><td>${gterm(annualTotal)}</td></tr>`;
+     }
+     let cells='';
+     ass.forEach(a=>{const x=pcVal(d,st,key,a,c);if(x.mark!==null)has=true;cells+=`<td>${x.mark===null?'-':x.mark}</td><td>${x.grade}</td>`});
+     const av=pcAnnualValue(d,st,key,c);
+     if(av.annual!==null){grand+=Number(av.annual);grandMax+=Number(av.annualMax);has=true}
+     return `<tr><td class="pc-subject">${label}</td>${cells}<td>${av.annual===null?'-':av.annual}</td><td>${av.annual===null?'-':gradeByMax(av.annual,av.annualMax)}</td></tr>`;
+   }).join('');
+   const overall=has&&grandMax?gradeByMax(grand,grandMax):'-';let promo=String(m.promotionEligible||'').trim(),result='-';if(['ಹೌದು','yes','Yes','YES'].includes(promo))result=T.pass;else if(['ಇಲ್ಲ','no','No','NO'].includes(promo))result=T.fail;
+   const school=db.school||{},dob=m.dob||st.dob||'',dobW=pcDobWords(dob,L)||(L==='kn'?(m.dobWordsKn||m.dobWords||''):(m.dobWordsEn||''));
+   document.getElementById('progressCardBody').innerHTML=`<div class="pc-card"><h2>${escapeHTML((L==='kn'?(school.nameKn||school.name):(school.nameEn||school.name))||'Teacher Friendly CCE Marks Entry')}</h2><h3>${T.title}</h3><div class="pc-meta"><div><b>UDISE:</b> ${escapeHTML(school.udise||'-')}</div><div><b>${T.academicYear}:</b> ${escapeHTML(school.academicYear||'-')}</div><div><b>${T.student}:</b> ${escapeHTML(pcStudentName(st,L)||'-')}</div><div><b>${T.classSection}:</b> ${c} / ${s}</div><div><b>SATS No.:</b> ${escapeHTML(st.sats||'-')}</div><div><b>PEN No.:</b> ${escapeHTML(st.pen||m.pen||'-')}</div><div><b>${T.dob}:</b> ${escapeHTML(dob||'-')}</div><div><b>${T.dobWords}:</b> ${escapeHTML(dobW||'-')}</div></div><div style="overflow-x:auto"><table class="pc-table ${is910?'pc-table-910':''}"><thead>${is910?`<tr><th rowspan="2">${T.subject}</th><th colspan="2">FA1</th><th colspan="2">FA2</th><th colspan="4">${L==='kn'?'ಅರ್ಧವಾರ್ಷಿಕ ಪರೀಕ್ಷೆ':'Half Yearly Examination'}</th><th colspan="2">FA3</th><th colspan="2">FA4</th><th colspan="4">${L==='kn'?'ವಾರ್ಷಿಕ ಪರೀಕ್ಷೆ':'Annual Examination'}</th></tr><tr><th>${L==='kn'?'ಅಂಕ /50':'Marks /50'}</th><th>${L==='kn'?'ಗ್ರೇಡ್':'Grade'}</th><th>${L==='kn'?'ಅಂಕ /50':'Marks /50'}</th><th>${L==='kn'?'ಗ್ರೇಡ್':'Grade'}</th><th>${L==='kn'?'ಪರೀಕ್ಷೆ':'Examination'}</th><th>${L==='kn'?'ಆಂತರಿಕ ಅಂಕ':'Internal Marks'}</th><th>${L==='kn'?'ಒಟ್ಟು':'Total'}</th><th>${L==='kn'?'ಗ್ರೇಡ್':'Grade'}</th><th>${L==='kn'?'ಅಂಕ /50':'Marks /50'}</th><th>${L==='kn'?'ಗ್ರೇಡ್':'Grade'}</th><th>${L==='kn'?'ಅಂಕ /50':'Marks /50'}</th><th>${L==='kn'?'ಗ್ರೇಡ್':'Grade'}</th><th>${L==='kn'?'ಪರೀಕ್ಷೆ':'Examination'}</th><th>${L==='kn'?'ಆಂತರಿಕ ಅಂಕ':'Internal Marks'}</th><th>${L==='kn'?'ಒಟ್ಟು':'Total'}</th><th>${L==='kn'?'ಗ್ರೇಡ್':'Grade'}</th></tr>`:`<tr><th rowspan="2">${T.subject}</th>${ass.map(a=>`<th colspan="2">${a}</th>`).join('')}<th colspan="2">${T.annual}</th></tr><tr>${ass.map(()=>`<th>${T.mark}</th><th>Grade</th>`).join('')}<th>${T.mark}</th><th>Grade</th></tr>`}</thead><tbody>${rows}</tbody></table></div><div class="pc-summary"><div><b>${T.total}:</b> ${has?Number(grand.toFixed(2)):'-'}</div><div><b>${T.overall}:</b> ${overall}</div><div><b>${T.marksWords}:</b> ${has?escapeHTML(pcNumberWords(grand,L)):'-'}</div><div><b>${T.result}:</b> ${result}</div></div><div class="pc-sign"><span>${T.teacher}</span><span>${T.head}</span></div></div>`;
+ };
+
+})();
+</script>
+
+
+<!-- v221 SAFE PATCH -->
+<style id="v221SafeStyle">
+#v221SaveChanges{display:none;margin:8px 0 12px}#v221EditNotice{display:none;margin:6px 0 8px;padding:8px 10px;border-left:4px solid #0b57d0;background:#eef5ff;font-weight:700}
+#progressCardModal .pc-dialog{width:min(1180px,98vw)!important;max-width:98vw!important;overflow-x:hidden!important;box-sizing:border-box}#progressCardModal .pc-card{box-sizing:border-box;overflow:hidden}#progressCardModal .pc-table{width:100%!important;table-layout:fixed!important;font-size:9px!important}#progressCardModal .pc-table th,#progressCardModal .pc-table td{padding:5px 2px!important;box-sizing:border-box;overflow-wrap:anywhere}#progressCardModal .pc-table th:first-child,#progressCardModal .pc-table td:first-child{width:18%!important}
+@media print{#progressCardModal .pc-dialog{width:100%!important;max-width:100%!important}#progressCardModal .pc-table{font-size:8px!important}#progressCardModal .pc-table th,#progressCardModal .pc-table td{padding:2px 1px!important}@page{size:A4 landscape;margin:6mm}}
+</style>
+<script id="v221SafeScript">
+(function(){'use strict';window.TFCCE_VERSION='v221';const $=id=>document.getElementById(id);
+function hideEdit(){const b=$('v221SaveChanges'),n=$('v221EditNotice');if(b)b.style.display='none';if(n)n.style.display='none'}function showEdit(){const b=$('v221SaveChanges'),n=$('v221EditNotice');if(b)b.style.display='inline-block';if(n)n.style.display='block'}
+function installStudentEdit(){const panel=$('studentV84')?.querySelector('.v84-panel');if(!panel||$('v221SaveChanges'))return;const h3=panel.querySelector('h3');if(!h3)return;const n=document.createElement('div');n.id='v221EditNotice';n.textContent='✏️ Existing Student Edit Mode — ಬದಲಾವಣೆ ಮಾಡಿ “Save Changes” ಒತ್ತಿ.';h3.insertAdjacentElement('afterend',n);const b=document.createElement('button');b.id='v221SaveChanges';b.type='button';b.className='btn success no-print';b.textContent='💾 ಬದಲಾವಣೆ ಉಳಿಸಿ / Save Changes';b.addEventListener('click',function(){const id=($('v84EditId')?.value||'').trim();if(!id){alert('ಮೊದಲು ವಿದ್ಯಾರ್ಥಿಗಳ ಪಟ್ಟಿಯಿಂದ Edit ಒತ್ತಿ.');return}if(typeof window.v84SaveStudent!=='function'){alert('Save function ಲಭ್ಯವಿಲ್ಲ.');return}window.v84SaveStudent();hideEdit();alert('✅ ವಿದ್ಯಾರ್ಥಿಯ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ.')});n.insertAdjacentElement('afterend',b);const oe=window.editStudentMaster;window.editStudentMaster=function(id){if(typeof oe==='function')oe(id);setTimeout(showEdit,50)};const oc=window.v84ClearForm;window.v84ClearForm=function(){if(typeof oc==='function')oc();hideEdit()}}
+function installPrintPreview(){
+  // v229: legacy preview disabled; v226 clean print provides the single stable Print Preview button.
+  const old=document.getElementById('v221PrintPreview');
+  if(old) old.remove();
+}
+function fit(){const table=document.querySelector('#progressCardBody .pc-table');if(!table||table.querySelector('colgroup'))return;const cg=document.createElement('colgroup');const widths=table.classList.contains('pc-table-910')?[15,5.31,5.31,5.31,5.31,5.31,5.31,5.31,5.31,5.31,5.31,5.31,5.31,5.31,5.31,5.31,5.31]:[18,5.8,5.8,5.8,5.8,5.8,5.8,5.8,5.8,5.8,5.8,5.8,5.8,6.2,6.2];widths.forEach(w=>{const c=document.createElement('col');c.style.width=w+'%';cg.appendChild(c)});table.insertBefore(cg,table.firstChild)}
+const or=window.renderProgressCard;if(typeof or==='function')window.renderProgressCard=function(){const r=or.apply(this,arguments);setTimeout(fit,0);return r};function install(){installStudentEdit();installPrintPreview();fit()}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(install,250));else setTimeout(install,100);window.addEventListener('load',()=>setTimeout(install,500));setInterval(function(){installStudentEdit();installPrintPreview()},1200)})();
+</script>
+
+
+<!-- v226 CLEAN PRINT: standalone iframe document from progressCardBody only -->
+<script id="v226CleanPrintScript">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v246';
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function cleanCardHTML(){
+  var body=document.getElementById('progressCardBody');
+  if(!body) return '';
+  var clone=body.cloneNode(true);
+
+  // v229: Do not add a separate Taluk/District line. The school heading itself is retained and centered.
+  try{
+    var card=clone.querySelector('.pc-card') || clone;
+    var extra=card.querySelector('.v228-location-line');
+    if(extra) extra.remove();
+    var schoolHeading=card.querySelector('h2');
+    if(schoolHeading){
+      schoolHeading.style.textAlign='center';
+      schoolHeading.style.display='block';
+      schoolHeading.style.width='100%';
+      schoolHeading.style.margin='1mm auto 2mm';
+    }
+  }catch(e){ console.warn('v229 school heading:',e); }
+
+  clone.querySelectorAll('script,style,button,.no-print').forEach(function(n){n.remove()});
+  return clone.innerHTML;
+}
+function makePrintDoc(){
+ var card=cleanCardHTML();
+ if(!card){alert('Marks Card ಮೊದಲು View ಮಾಡಿ.');return null;}
+ var frame=document.getElementById('v226PrintFrame');
+ if(frame) frame.remove();
+ frame=document.createElement('iframe');
+ frame.id='v226PrintFrame';
+ frame.setAttribute('aria-hidden','true');
+ frame.style.position='fixed';frame.style.right='0';frame.style.bottom='0';frame.style.width='1px';frame.style.height='1px';frame.style.border='0';frame.style.opacity='0';
+ document.body.appendChild(frame);
+ var d=frame.contentDocument || frame.contentWindow.document;
+ d.open();
+ d.write('<!doctype html><html><head><meta charset="UTF-8"><title>Marks Card - Progress Card</title><style>'+
+ '@page{size:A4 portrait;margin:8mm}*{box-sizing:border-box}html,body{margin:0;padding:0;background:#fff;color:#111;font-family:"Noto Sans Kannada","Nirmala UI",Arial,sans-serif}'+
+ '.pc-card{width:100%;max-width:194mm;min-height:274mm;margin:0 auto;border:1px solid #555;padding:6mm;font-size:11px;page-break-inside:avoid;display:flex;flex-direction:column}'+
+ '.pc-card>h2{text-align:center!important;width:100%!important;margin:2mm auto 2mm!important;font-size:18px!important;line-height:1.35!important}.pc-card>h3{text-align:center!important;width:100%!important;margin:1mm auto 4mm!important;font-weight:700!important;font-size:16px!important}'+  '.pc-location-line{text-align:center!important;font-weight:700!important;margin:0 auto 2mm!important;width:100%!important;white-space:pre-wrap!important}'+
+
+ '.pc-head{text-align:center;margin-bottom:3mm}.pc-head h2,.pc-head h3,.pc-head p{margin:1mm 0}.pc-meta{display:grid;grid-template-columns:1fr 1fr;gap:2.2mm 9mm;margin:4mm 0 6mm;font-size:14px!important;line-height:1.4}.pc-meta div{min-width:0;overflow-wrap:anywhere}.pc-meta b{font-size:14px!important}'+
+ '.pc-card>div[style*=\"overflow-x\"]{flex:0 0 auto;display:block;width:100%;margin-top:5mm}table,.pc-table{width:100%!important;border-collapse:collapse!important;table-layout:fixed!important;font-size:12px!important}.pc-table th,.pc-table td,th,td{border:1px solid #777;padding:4mm .9mm;text-align:center;vertical-align:middle;overflow-wrap:anywhere}.pc-table th{font-weight:700;font-size:12px!important}.pc-table td:not(.pc-subject){font-weight:800;font-size:13px!important}.pc-table .pc-subject{font-size:12px!important;font-weight:700}.pc-table th:first-child,.pc-table td:first-child{width:18%;text-align:left}.pc-table-910{font-size:7px!important}.pc-table-910 th,.pc-table-910 td{padding:4mm .25mm!important;line-height:1.18!important}.pc-table-910 th{font-size:7px!important}.pc-table-910 td:not(.pc-subject){font-size:7.6px!important;font-weight:800}.pc-table-910 .pc-subject{font-size:8px!important}'+
+ '.pc-bottom{display:grid;grid-template-columns:1fr 1fr;gap:3mm 8mm;margin-top:3mm}.pc-summary{font-size:14px!important;margin-top:3mm!important;line-height:1.55;font-weight:700}.pc-sign{display:flex;justify-content:space-between;margin-top:auto;padding-top:12mm;font-weight:700;font-size:12px}.no-print{display:none!important}'+
+ 'h1,h2,h3,h4,p{page-break-after:avoid}'+
+ '</style></head><body><main class="print-page">'+card+'</main>
+\n<!-- v255: Marks Card stable current-page print. No iframe/popup; academic logic untouched. -->\n<style id="v255MarksCardPrintStyle">\n#__pc_print_overlay{display:none}\n@media print{\n  @page{size:A4 portrait;margin:8mm}\n  body>*{display:none!important}\n  body>#__pc_print_overlay{display:block!important;position:static!important;width:100%!important;height:auto!important;margin:0!important;padding:0!important;background:#fff!important}\n  #__pc_print_overlay .pc-card{display:flex!important;width:100%!important;max-width:194mm!important;min-height:274mm!important;margin:0 auto!important;border:1px solid #555!important;padding:6mm!important;box-sizing:border-box!important;font-family:"Noto Sans Kannada","Nirmala UI",Arial,sans-serif!important;color:#111!important;background:#fff!important;page-break-inside:avoid!important;flex-direction:column!important}\n  #__pc_print_overlay h2{display:block!important;text-align:center!important;width:100%!important;margin:2mm auto 2mm!important;font-size:18px!important;line-height:1.35!important}\n  #__pc_print_overlay h3{display:block!important;text-align:center!important;width:100%!important;margin:1mm auto 4mm!important;font-size:16px!important}\n  #__pc_print_overlay .pc-meta{display:grid!important;grid-template-columns:1fr 1fr!important;gap:2.2mm 9mm!important;margin:4mm 0 6mm!important;font-size:14px!important;line-height:1.4!important}\n  #__pc_print_overlay .pc-card>div[style*="overflow-x"]{display:block!important;width:100%!important;margin-top:5mm!important;overflow:visible!important}\n  #__pc_print_overlay table,#__pc_print_overlay .pc-table{display:table!important;width:100%!important;border-collapse:collapse!important;table-layout:fixed!important;font-size:12px!important}\n  #__pc_print_overlay thead{display:table-header-group!important}#__pc_print_overlay tbody{display:table-row-group!important}#__pc_print_overlay tr{display:table-row!important}\n  #__pc_print_overlay th,#__pc_print_overlay td{display:table-cell!important;border:1px solid #777!important;padding:4mm .9mm!important;text-align:center!important;vertical-align:middle!important;overflow-wrap:anywhere!important}\n  #__pc_print_overlay .pc-table th:first-child,#__pc_print_overlay .pc-table td:first-child{width:18%!important;text-align:left!important}\n  #__pc_print_overlay .pc-table td:not(.pc-subject){font-weight:800!important;font-size:13px!important}\n  #__pc_print_overlay .pc-table-910{font-size:7px!important}\n  #__pc_print_overlay .pc-table-910 th,#__pc_print_overlay .pc-table-910 td{padding:4mm .25mm!important;line-height:1.18!important;font-size:7px!important}\n  #__pc_print_overlay .pc-table-910 td:not(.pc-subject){font-size:7.6px!important;font-weight:800!important}\n  #__pc_print_overlay .pc-table-910 .pc-subject{font-size:8px!important}\n  #__pc_print_overlay .pc-summary{display:grid!important;font-size:14px!important;margin-top:3mm!important;line-height:1.55!important;font-weight:700!important}\n  #__pc_print_overlay .pc-sign{display:flex!important;justify-content:space-between!important;margin-top:auto!important;padding-top:12mm!important;font-weight:700!important;font-size:12px!important}\n  #__pc_print_overlay .no-print,#__pc_print_overlay button,#__pc_print_overlay script,#__pc_print_overlay style{display:none!important}\n}\n</style>\n<script id="v255MarksCardPrintFix">\n(function(){\n'use strict';\nwindow.TFCCE_VERSION='v255';\nfunction buildOverlay(){\n  var source=document.querySelector('#progressCardBody .pc-card');\n  if(!source){alert('Marks Card ಮೊದಲು View ಮಾಡಿ.');return null;}\n  var old=document.getElementById('__pc_print_overlay');if(old)old.remove();\n  var overlay=document.createElement('div');overlay.id='__pc_print_overlay';\n  var clone=source.cloneNode(true);\n  clone.querySelectorAll('script,style,button,.no-print').forEach(function(n){n.remove();});\n  overlay.appendChild(clone);document.body.appendChild(overlay);return overlay;\n}\nfunction stablePrint(){\n  var overlay=buildOverlay();if(!overlay)return;\n  var oldTitle=document.title;document.title='Marks Card - Progress Card';\n  var cleaned=false;\n  function cleanup(){if(cleaned)return;cleaned=true;document.title=oldTitle;try{overlay.remove();}catch(e){}window.removeEventListener('afterprint',cleanup);}\n  window.addEventListener('afterprint',cleanup);\n  /* Force layout before print; no iframe, popup, load wait, or long timer. */\n  void overlay.offsetHeight;\n  try{window.focus();window.print();}catch(e){cleanup();alert('Print Preview ತೆರೆಯಲು ಆಗಲಿಲ್ಲ: '+e.message);}\n  setTimeout(cleanup,3000);\n}\nwindow.v226PrintProgressCard=stablePrint;\nwindow.printProgressCard=stablePrint;\nfunction bind(){\n  var modal=document.getElementById('progressCardModal');if(!modal)return;\n  var actions=modal.querySelector('.pc-actions');if(!actions)return;\n  var pp=document.getElementById('v226PrintPreview');if(pp)pp.onclick=stablePrint;\n  Array.prototype.forEach.call(actions.querySelectorAll('button'),function(b){if(/^🖨\\s*Print$/.test((b.textContent||'').trim())||((b.textContent||'').trim()==='🖨 Print'))b.onclick=stablePrint;});\n}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bind);else bind();\nwindow.addEventListener('load',bind);\nvar oldOpen=window.openProgressCard;if(typeof oldOpen==='function')window.openProgressCard=function(){var r=oldOpen.apply(this,arguments);bind();return r;};\n})();\n<\/script>\n
+');
+ d.close();
+ return frame;
+}
+window.v226PrintProgressCard=function(){
+ var f=makePrintDoc(); if(!f)return;
+ try{
+   var fw=f.contentWindow;
+   var doc=f.contentDocument || (fw && fw.document);
+   if(!fw || !doc) throw new Error('Print document not available');
+
+   // v250: print the already-built A4 document directly from the hidden iframe.
+   // No second popup/new tab and no load-event wait. This keeps the print call
+   // in the user's click flow and avoids the 20–30 second Chrome delay.
+   try{ fw.focus(); }catch(_e){}
+   fw.print();
+
+   // Keep the iframe until the print dialog has taken its snapshot.
+   setTimeout(function(){ try{ if(f && f.parentNode) f.parentNode.removeChild(f); }catch(_e){} },1500);
+ }catch(e){
+   try{ if(f&&f.remove)f.remove(); }catch(_e){}
+   alert('Print Preview ತೆರೆಯಲು ಆಗಲಿಲ್ಲ: '+e.message);
+ }
+};
+function install(){
+ var modal=document.getElementById('progressCardModal'); if(!modal)return;
+ var actions=modal.querySelector('.pc-actions'); if(!actions)return;
+ var old=document.getElementById('v221PrintPreview'); if(old)old.remove();
+ var buttons=[].slice.call(actions.querySelectorAll('button'));
+ var printBtn=buttons.find(function(b){return /print/i.test(b.textContent||'')&&!/preview/i.test(b.textContent||'')});
+ if(printBtn){printBtn.onclick=window.v226PrintProgressCard;}
+ if(!document.getElementById('v226PrintPreview')){
+   var b=document.createElement('button');b.id='v226PrintPreview';b.type='button';b.className='btn';b.textContent='🖨️ Print Preview';b.onclick=window.v226PrintProgressCard;
+   if(printBtn)printBtn.insertAdjacentElement('beforebegin',b); else actions.appendChild(b);
+ }
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){setTimeout(install,250)});else setTimeout(install,100);
+window.addEventListener('load',function(){setTimeout(install,500)});
+})();
+</script>
+
+<!-- v251: TC final workflow - archive immediately after Generate TC & Preview Print. -->
+<script id="v251TcFormerStudentFinal">
+(function(){
+'use strict';
+function clone251(x){try{return JSON.parse(JSON.stringify(x))}catch(e){return x}}
+function archive251(c,s,id,backup){
+  try{
+    if(!c||!s||!id||!backup)return false;
+    db.formerStudents=Array.isArray(db.formerStudents)?db.formerStudents:[];
+    const d=getClassSection(c,s);
+    let rec=db.formerStudents.find(x=>String(x.id)===String(id));
+    if(!rec){rec=clone251(backup);db.formerStudents.push(rec)}
+    else Object.assign(rec,clone251(backup));
+    rec.status='Former Student';
+    rec.tc=Object.assign({},rec.tc||{},clone251(backup.tc||{}));
+    rec.formerMeta=Object.assign({},rec.formerMeta||{},clone251(backup.formerMeta||{}),{
+      source:'TC',class:String(c),section:String(s),archivedAt:new Date().toISOString()
+    });
+    if(d.marks&&Object.prototype.hasOwnProperty.call(d.marks,id)){
+      rec.marksSnapshot=clone251(d.marks[id])||{};
+      delete d.marks[id];
+    }
+    d.students=(d.students||[]).filter(x=>String(x.id)!==String(id));
+    if(typeof saveData==='function')saveData();
+    try{if(typeof renderStudents==='function')renderStudents()}catch(e){}
+    try{if(typeof renderFormerStudents==='function')renderFormerStudents()}catch(e){}
+    try{if(typeof updateDashboard==='function')updateDashboard();else if(typeof v99RenderDashboard==='function')v99RenderDashboard()}catch(e){}
+    return true;
+  }catch(e){console.error('v251 TC archive failed',e);return false}
+}
+const previous251=window.v85PrintTC;
+if(typeof previous251==='function'&&!previous251._v251patched){
+  const wrapped=function(){
+    let c='',s='',id='',backup=null;
+    try{
+      c=String(studentClass?.value||'');
+      s=String(studentSection?.value||'');
+      id=String(document.getElementById('v85TcStudent')?.value||'');
+      const d=getClassSection(c,s),st=(d.students||[]).find(x=>String(x.id)===id);
+      if(st){
+        backup=clone251(st);
+        backup.tc=backup.tc||{};
+        const keys=['TcNo','Cr','BirthPlace','Taluk','District','State','Nationality','SubCaste','Scst','Promotion','DobWords','LeavingClass','Medium','AdmissionDate','Fees','Concession','Scholarship','Medical','LastAttend','Application','Issue','Character'];
+        keys.forEach(k=>{const el=document.getElementById('v85'+k);if(el)backup.tc[k]=el.value});
+        backup.schoolDays=document.getElementById('v85TotalDays')?.value||backup.schoolDays||'';
+        backup.attendedDays=document.getElementById('v85DaysAttended')?.value||backup.attendedDays||'';
+      }
+    }catch(e){}
+    const result=previous251.apply(this,arguments);
+    if(backup)archive251(c,s,id,backup);
+    return result;
+  };
+  wrapped._v251patched=true;
+  window.v85PrintTC=wrapped;
+}
+})();
+</script>
+
+<!-- =========================================================\n v252 SIMPLE TEACHER ACCESS FINAL\n Policy: Teachers may enter/save marks for ALL classes/subjects.\n Head Teacher only: student master mutations, TC/transfer, teacher\n management, settings/data reset/import, academic admin actions.\n========================================================= -->\n<style id="v253TeacherReadOnlyStyle">
+body.v253-teacher-mode #students .no-print{display:none!important}
+body.v253-teacher-mode #students input[type="radio"]{display:none!important}
+</style>
+<script id="v253SimpleTeacherAccessFinal">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v253';
+const HEAD_MODE='cce_v107_head_mode', ADMIN_SESSION='TFCCE_V110_ADMIN_SESSION', TEACHER_SESSION='TFCCE_V190_TEACHER_SESSION';
+function head(){return sessionStorage.getItem(HEAD_MODE)==='1'||sessionStorage.getItem(ADMIN_SESSION)==='1'}
+function teacher(){try{return !!JSON.parse(sessionStorage.getItem(TEACHER_SESSION)||'null')}catch(e){return false}}
+function work(){return head()||teacher()}
+function deny(){alert('ಈ ಕಾರ್ಯ Head Teacherಗೆ ಮಾತ್ರ ಲಭ್ಯ. / Head Teacher access required.');return false}
+function hide(el,on){if(!el)return;if(on)el.style.setProperty('display','none','important');else el.style.removeProperty('display')}
+function lockUI(){
+ const h=head(), t=teacher()&&!h, w=work();
+ document.body.classList.toggle('v253-teacher-mode',t);
+ // Student Database: teacher = strictly read-only. Class/Section + Export/Print only.
+ const sp=document.getElementById('students');
+ if(sp){
+   sp.querySelectorAll('button').forEach(function(b){
+     const z=((b.getAttribute('onclick')||'')+' '+(b.id||'')+' '+(b.textContent||'')).toLowerCase();
+     const safe=/export|print/.test(z);
+     hide(b,t&&!safe);
+   });
+   sp.querySelectorAll('input,select,textarea').forEach(function(el){
+     const viewing=(el.id==='studentClass'||el.id==='studentSection');
+     if(t){el.disabled=!viewing;} else if(h){el.disabled=false;}
+   });
+   // Dynamic student rows: remove Action cells completely for teachers.
+   if(t) sp.querySelectorAll('th.no-print,td.no-print').forEach(function(el){hide(el,true)});
+ }
+ // TC / transfer = Head Teacher only.
+ hide(document.getElementById('nav-tc'),!h);
+ const tc=document.getElementById('tc');if(tc)tc.querySelectorAll('input,select,textarea,button').forEach(function(el){el.disabled=!h});
+ // Marks Entry: every logged-in teacher can select all classes/sections/subjects/assessments and Save.
+ ['marks','marks910'].forEach(function(id){const p=document.getElementById(id);if(!p)return;p.querySelectorAll('select,input').forEach(function(el){el.disabled=false});p.querySelectorAll('button').forEach(function(b){const z=(b.getAttribute('onclick')||'')+' '+(b.textContent||'');if(/saveMarksNow|Save/i.test(z))hide(b,!w)});});
+ // Settings mutations + teacher management = Head Teacher only.
+ const settings=document.getElementById('settings');if(settings)settings.querySelectorAll('button').forEach(function(b){const z=(b.getAttribute('onclick')||'')+' '+(b.textContent||'');if(/saveSettings|resetData|Save Settings|Reset All Data/i.test(z))hide(b,!h)});
+ ['v134AddTeacher','v134SetHeadEmail'].forEach(function(id){hide(document.getElementById(id),!h)});
+ const rows=document.getElementById('v134TeacherRows');if(rows)rows.querySelectorAll('button').forEach(function(b){hide(b,!h)});
+}
+function guard(name,allowWork){const old=window[name];if(typeof old!=='function'||old.__v253)return;const f=function(){if(allowWork?work():head())return old.apply(this,arguments);return deny()};f.__v253=true;window[name]=f;try{eval(name+'=window["'+name+'"]')}catch(e){}}
+guard('saveMarksNow',true);
+['v84SaveStudent','importExcel','deleteStudent','v87DeleteStudent','editStudentMaster','v84TCGenerator','v87OpenTC','openTransfer','saveTC','saveSettings','resetData','v137TeacherEdit','v137TeacherAction','v136TeacherAction','v134TeacherAction','v175PromoteAcademicYear','v175RestoreLatestAcademicArchive','importFormerStudentsExcel'].forEach(function(n){guard(n,false)});
+const prev=window.v190ApplyRoleUI;window.v190ApplyRoleUI=function(){try{if(typeof prev==='function')prev.apply(this,arguments)}catch(e){};lockUI()};
+const oldShow=window.showPage;if(typeof oldShow==='function'){window.showPage=function(){const r=oldShow.apply(this,arguments);setTimeout(lockUI,0);setTimeout(lockUI,100);return r};try{showPage=window.showPage}catch(e){}}
+// Wrap final dynamic student renderer so Action/Edit can never reappear for a teacher.
+const oldRender=window.renderStudents;if(typeof oldRender==='function'){window.renderStudents=function(){const r=oldRender.apply(this,arguments);lockUI();return r};try{renderStudents=window.renderStudents}catch(e){}}
+function init(){lockUI();setTimeout(lockUI,250)}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+window.addEventListener('load',init);
+new MutationObserver(function(){lockUI()}).observe(document.documentElement,{childList:true,subtree:true});
+})();
+</script>
+<script id="v260MarksCardPrintFinal">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v265-PRINT-SIGNATURE-FIXED';
+function v260PrintMarksCard(){
+  var source=document.querySelector('#progressCardBody .pc-card');
+  if(!source){alert('Marks Card ಮೊದಲು View ಮಾಡಿ.');return;}
+  var old=document.getElementById('v260PrintFrame'); if(old) old.remove();
+  var frame=document.createElement('iframe'); frame.id='v260PrintFrame';
+  frame.style.cssText='position:fixed;left:-10000px;top:0;width:210mm;height:297mm;border:0;background:#fff;';
+  document.body.appendChild(frame);
+  var d=frame.contentDocument || frame.contentWindow.document;
+  d.open();
+  d.write('<!doctype html><html><head><meta charset="UTF-8"><title>Marks Card - Progress Card</title><style>'+ 
+  '@page{size:A4 portrait;margin:7mm}*{box-sizing:border-box}html,body{margin:0;padding:0;background:#fff;color:#111;font-family:"Noto Sans Kannada","Nirmala UI",Arial,sans-serif}body{width:196mm;height:283mm!important;max-height:283mm!important;overflow:hidden!important}'+
+  '.pc-card{width:196mm!important;max-width:196mm!important;min-height:278mm!important;height:278mm!important;max-height:278mm!important;margin:0!important;border:1px solid #555!important;padding:4.5mm 4.5mm 18mm!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;font-size:17px!important;page-break-inside:avoid!important;break-inside:avoid-page!important;position:relative!important}'+
+  '.pc-card>h2{text-align:center!important;width:100%!important;min-height:6mm!important;margin:0 0 .6mm!important;font-size:14px!important;line-height:1.1!important;display:flex!important;align-items:center!important;justify-content:center!important;white-space:nowrap!important;word-break:normal!important;overflow-wrap:normal!important}.pc-card>h3{text-align:center!important;width:100%!important;margin:0 0 2mm!important;font-size:14px!important}'+
+  '.pc-location-line{text-align:center!important;font-weight:700!important;margin:0 0 .6mm!important}.pc-meta{display:grid!important;grid-template-columns:1fr 1fr!important;gap:1.5mm 8mm!important;margin:2mm 0 3mm!important;font-size:12.5px!important;line-height:1.28!important}.pc-meta b{font-size:12.5px!important}'+
+  '.pc-card>div[style*="overflow-x"]{display:block!important;width:100%!important;overflow:visible!important;margin:3mm 0 0!important;flex:0 0 auto!important}'+
+  'table,.pc-table{width:100%!important;max-width:100%!important;border-collapse:collapse!important;table-layout:fixed!important;font-size:11px!important}th,td,.pc-table th,.pc-table td{border:1px solid #777!important;padding:5.2mm .45mm!important;text-align:center!important;vertical-align:middle!important;overflow:hidden!important;overflow-wrap:anywhere!important;word-break:break-word!important;line-height:1.18!important}.pc-table th:first-child,.pc-table td:first-child{width:18%!important;text-align:left!important}.pc-subject{font-weight:700!important}'+
+  '.pc-group-primary .pc-table th,.pc-group-primary .pc-table td{padding-top:5.4mm!important;padding-bottom:5.4mm!important;font-size:12px!important}.pc-group-middle .pc-table th,.pc-group-middle .pc-table td{padding-top:4.5mm!important;padding-bottom:4.5mm!important;font-size:11px!important}'+
+  '.pc-table-910{font-size:7.4px!important}.pc-table-910 th,.pc-table-910 td{padding:3.2mm .18mm!important;font-size:7.4px!important;line-height:1.12!important}.pc-table-910 th:first-child,.pc-table-910 td:first-child{width:16%!important}.pc-table-910 .pc-subject{font-size:8px!important}'+
+  '.pc-bottom{display:grid!important;grid-template-columns:1fr 1fr!important;gap:1.5mm 6mm!important;margin-top:2mm!important}.pc-summary{font-size:12.5px!important;line-height:1.35!important;margin-top:2mm!important;font-weight:700!important}.pc-sign{display:flex!important;justify-content:space-between!important;position:absolute!important;left:4.5mm!important;right:4.5mm!important;bottom:4.5mm!important;margin:0!important;padding-top:2mm!important;font-size:11px!important;font-weight:700!important;page-break-inside:avoid!important;break-inside:avoid!important;background:#fff!important}.no-print,button,script,style{display:none!important}'+
+  '</style></head><body></body></html>');
+  d.close();
+  var clone=source.cloneNode(true);
+  clone.querySelectorAll('script,style,button,.no-print').forEach(function(n){n.remove();});
+  var pt=clone.querySelector('.pc-table');
+  if(pt){
+    var subjectRows=pt.querySelectorAll('tbody tr').length;
+    if(pt.classList.contains('pc-table-910')) clone.classList.add('pc-group-910');
+    else if(subjectRows<=4) clone.classList.add('pc-group-primary');
+    else clone.classList.add('pc-group-middle');
+  }
+  var printed=d.importNode(clone,true);
+  d.body.appendChild(printed);
+  /* v264: Chrome A4 one-page guard. Only if the complete card (including signatures)
+     exceeds the printable height, reduce it just enough to keep every item on page 1. */
+  try{
+    void d.body.offsetHeight;
+    var maxPx=(280/25.4)*96;
+    var actual=Math.max(printed.scrollHeight,printed.getBoundingClientRect().height);
+    if(actual>maxPx){
+      var fit=Math.max(0.82,Math.min(1,maxPx/actual));
+      printed.style.zoom=String(fit);
+      printed.style.width=(196/fit)+'mm';
+      printed.style.maxWidth=(196/fit)+'mm';
+    }
+  }catch(e){}
+  try{void d.body.offsetHeight; frame.contentWindow.focus(); frame.contentWindow.print();}
+  catch(e){alert('Print Preview ತೆರೆಯಲು ಆಗಲಿಲ್ಲ: '+e.message);}
+  setTimeout(function(){try{frame.remove();}catch(e){}},3000);
+}
+window.v226PrintProgressCard=v260PrintMarksCard;
+window.printProgressCard=v260PrintMarksCard;
+function bind(){
+ var modal=document.getElementById('progressCardModal'); if(!modal)return;
+ var actions=modal.querySelector('.pc-actions'); if(!actions)return;
+ actions.querySelectorAll('button').forEach(function(b){var t=(b.textContent||'').trim();if(/print/i.test(t)){b.onclick=v260PrintMarksCard;}});
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bind);else bind();
+window.addEventListener('load',bind);
+var prevOpen=window.openProgressCard;if(typeof prevOpen==='function')window.openProgressCard=function(){var r=prevOpen.apply(this,arguments);setTimeout(bind,0);return r;};
+document.addEventListener('click',function(e){
+ var b=e.target&&e.target.closest?e.target.closest('#progressCardModal .pc-actions button'):null;if(!b)return;
+ if(/print/i.test((b.textContent||'').trim())){e.preventDefault();e.stopImmediatePropagation();v260PrintMarksCard();}
+},true);
+})();
+</script>
+
+<script id="v262MarksCloudSyncFinal">
+(function(){
+'use strict';
+/* v262: Marks-only cloud reliability hook. Academic calculations are untouched.
+   Every successful marks edit/save schedules the existing secure Smart Cloud sync. */
+var marksSyncTimer=null;
+function scheduleMarksCloudSync(){
+  clearTimeout(marksSyncTimer);
+  marksSyncTimer=setTimeout(function(){
+    try{
+      if(navigator.onLine && typeof window.v194AutoCloudSync==='function'){
+        window.v194AutoCloudSync();
+      }
+    }catch(e){console.warn('v262 marks cloud sync',e);}
+  },1200);
+}
+['updateFA','updateSA','update910FA','update910SA','update910SAOnly','saveMarksNow'].forEach(function(name){
+  var old=window[name];
+  if(typeof old!=='function' || old.__v262MarksCloud)return;
+  var wrapped=function(){
+    var r=old.apply(this,arguments);
+    scheduleMarksCloudSync();
+    return r;
+  };
+  wrapped.__v262MarksCloud=true;
+  window[name]=wrapped;
+  try{eval(name+'=window["'+name+'"]')}catch(e){}
+});
+window.v262SyncMarksNow=scheduleMarksCloudSync;
+})();
+</script>
+<!-- =========================================================
+ v270 VIEW ONLY SAFE DEMO MODE
+ All sections remain visible in View Only.
+ Browse / Print / Preview / Export are allowed.
+ Any data-changing action asks the user to Login.
+========================================================= -->
+<style id="v270SafeDemoStyle">
+body.v270-view-only .v270-locked-control{background:#f3f4f6!important;color:#555!important;cursor:not-allowed!important}
+body.v270-view-only button.v270-locked-action{opacity:.72;cursor:not-allowed!important}
+</style>
+<script id="v270ViewOnlySafeDemoMode">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v270-VIEW-ONLY-SAFE-DEMO-MODE';
+const HEAD_MODE='cce_v107_head_mode',ADMIN_SESSION='TFCCE_V110_ADMIN_SESSION',TEACHER_SESSION='TFCCE_V190_TEACHER_SESSION';
+function isHead(){return sessionStorage.getItem(HEAD_MODE)==='1'||sessionStorage.getItem(ADMIN_SESSION)==='1'}
+function isTeacher(){try{return !!JSON.parse(sessionStorage.getItem(TEACHER_SESSION)||'null')}catch(e){return false}}
+function hasWorkRole(){return isHead()||isTeacher()}
+let lastDeny=0;
+function deny(){
+ const now=Date.now(); if(now-lastDeny<650)return false; lastDeny=now;
+ alert('ದಯವಿಟ್ಟು Login ಆಗಿ. ಮಾಹಿತಿ ಸೇರಿಸಲು ಅಥವಾ ಬದಲಾಯಿಸಲು Head Teacher / Teacher Login ಅಗತ್ಯವಿದೆ.');
+ return false;
+}
+function isBrowseSelect(el){
+ const id=String(el.id||'');
+ return /^(studentClass|studentSection|marksClass|marksSection|marksSubject|assessmentSelect|marks910Class|marks910Section|marks910Subject|marks910Assessment|reportClass|reportSection|reportSubject|schoolReportGroup|school910Class|school910Section|tcClass|tcSection|tcStudent|pcStudent|appLanguage)$/.test(id);
+}
+function actionText(el){return (((el&&el.getAttribute&&el.getAttribute('onclick'))||'')+' '+((el&&el.id)||'')+' '+((el&&el.textContent)||'')).toLowerCase()}
+function isSafeButton(b){
+ const z=actionText(b);
+ if(/login|access|logout/.test(z))return true;
+ return /print|preview|export|excel|pdf|view|close|openprogresscard|marks card|progress card/.test(z) &&
+        !/import|save|delete|remove|reset|repair|restore|cleanup|sync|apply|edit|add|transfer|promote|update|set pin|change pin/.test(z);
+}
+function isMutationButton(b){
+ if(isSafeButton(b))return false;
+ const z=actionText(b);
+ return /save|delete|remove|reset|repair|restore|cleanup|sync|apply|edit|add|import|transfer|promote|update|set|change|generate|upload/.test(z);
+}
+function applyViewOnlyUI(){
+ const viewOnly=!hasWorkRole();
+ document.body.classList.toggle('v270-view-only',viewOnly);
+ document.querySelectorAll('.v270-locked-control').forEach(el=>el.classList.remove('v270-locked-control'));
+ document.querySelectorAll('.v270-locked-action').forEach(el=>el.classList.remove('v270-locked-action'));
+ if(!viewOnly)return;
+ // Keep all pages and their information visible. Only data-entry controls are visually locked.
+ document.querySelectorAll('main input,main textarea,main select,#progressCardModal input,#progressCardModal textarea,#progressCardModal select').forEach(function(el){
+   if(el.tagName==='SELECT' && isBrowseSelect(el))return;
+   if(el.type==='file'){el.classList.add('v270-locked-control');return}
+   el.classList.add('v270-locked-control');
+ });
+ document.querySelectorAll('main button,#progressCardModal button').forEach(function(b){if(isMutationButton(b))b.classList.add('v270-locked-action')});
+}
+// Capture attempted edits before inline/oninput handlers can change or save data.
+document.addEventListener('beforeinput',function(e){
+ if(hasWorkRole())return;
+ const el=e.target;
+ if(el && (el.matches('main input,main textarea,#progressCardModal input,#progressCardModal textarea'))){e.preventDefault();e.stopImmediatePropagation();deny()}
+},true);
+document.addEventListener('keydown',function(e){
+ if(hasWorkRole())return;
+ const el=e.target;
+ if(el && el.matches('main input,main textarea,#progressCardModal input,#progressCardModal textarea') && !['Tab','Shift','Control','Alt','Meta','Escape'].includes(e.key)){e.preventDefault();e.stopImmediatePropagation();deny()}
+},true);
+document.addEventListener('click',function(e){
+ if(hasWorkRole())return;
+ const b=e.target&&e.target.closest?e.target.closest('button'):null;
+ if(b && isMutationButton(b)){e.preventDefault();e.stopImmediatePropagation();deny();return}
+ const el=e.target;
+ if(el && el.matches && el.matches('input[type="file"]')){e.preventDefault();e.stopImmediatePropagation();deny()}
+},true);
+document.addEventListener('change',function(e){
+ if(hasWorkRole())return;
+ const el=e.target;
+ if(!el||!el.matches)return;
+ if(el.matches('select') && isBrowseSelect(el))return;
+ if(el.matches('main input,main textarea,main select,#progressCardModal input,#progressCardModal textarea,#progressCardModal select')){e.preventDefault();e.stopImmediatePropagation();deny()}
+},true);
+// Second layer: block common mutation functions even if invoked outside the UI.
+[
+ 'addStudent','v84SaveStudent','importExcel','deleteStudent','v87DeleteStudent','editStudentMaster','openTransfer','saveTC','v84TCGenerator','v87OpenTC',
+ 'updateFA','updateSA','update910FA','update910SA','update910SAOnly','saveMarksNow','apply910Settings','save910StandardMax',
+ 'toggleSchoolEditMode','saveSchoolConsolidatedEdits','saveSettings','resetData','importFormerStudentsExcel','v175PromoteAcademicYear','v175RestoreLatestAcademicArchive',
+ 'v137TeacherEdit','v137TeacherAction','v136TeacherAction','v134TeacherAction'
+].forEach(function(name){
+ const old=window[name]; if(typeof old!=='function'||old.__v270Guard)return;
+ const wrapped=function(){if(!hasWorkRole())return deny();return old.apply(this,arguments)};
+ wrapped.__v270Guard=true; window[name]=wrapped; try{eval(name+'=window["'+name+'"]')}catch(e){}
+});
+const prevRole=window.v190ApplyRoleUI;
+window.v190ApplyRoleUI=function(){let r;try{if(typeof prevRole==='function')r=prevRole.apply(this,arguments)}catch(e){};setTimeout(applyViewOnlyUI,0);return r};
+const prevShow=window.showPage;
+if(typeof prevShow==='function'){
+ window.showPage=function(){const r=prevShow.apply(this,arguments);setTimeout(applyViewOnlyUI,0);setTimeout(applyViewOnlyUI,150);return r};
+ try{showPage=window.showPage}catch(e){}
+}
+function init(){applyViewOnlyUI();setTimeout(applyViewOnlyUI,300);setTimeout(applyViewOnlyUI,1200)}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+window.addEventListener('load',init);
+new MutationObserver(function(){applyViewOnlyUI()}).observe(document.documentElement,{childList:true,subtree:true});
+setInterval(function(){try{applyViewOnlyUI()}catch(e){}},2500);
+})();
+</script>
+
+<!-- =========================================================
+ v272 SIMPLE MASTER HEAD PIN CONTROL
+ - Based on stable v270.
+ - No MutationObserver / render loop added.
+ - Master Admin gets one direct Set / Change Head PIN button.
+========================================================= -->
+<script id="v272MasterHeadPinSimpleFix">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v272-MASTER-HEAD-PIN-SIMPLE-FIXED';
+const STORE='TFCCE_V110_SCHOOLS';
+const ADMIN_SESSION='TFCCE_V110_ADMIN_SESSION';
+const HEAD_MODE='cce_v107_head_mode';
+function readSchools(){try{return JSON.parse(localStorage.getItem(STORE)||'[]')}catch(e){return[]}}
+function writeSchools(list){localStorage.setItem(STORE,JSON.stringify(list))}
+window.v272SetSchoolHeadPin=function(){
+  if(sessionStorage.getItem(ADMIN_SESSION)!=='1'){
+    alert('Master Admin login required.'); return;
+  }
+  const list=readSchools();
+  if(!list.length){alert('School account ಸಿಗಲಿಲ್ಲ. ಮೊದಲು school account save ಮಾಡಿ.');return;}
+  const menu=list.map((x,i)=>(i+1)+'. '+(x.name||'School')+' — '+(x.udise||'')).join('\n');
+  const pick=(prompt('Head Teacher PIN ಹೊಂದಿಸಬೇಕಾದ school ಆಯ್ಕೆ ಮಾಡಿ.\n\n'+menu+'\n\nSchool number ನಮೂದಿಸಿ:','1')||'').trim();
+  if(!pick)return;
+  const n=Number(pick);
+  if(!Number.isInteger(n)||n<1||n>list.length){alert('ಸರಿಯಾದ school number ನಮೂದಿಸಿ.');return;}
+  const school=list[n-1];
+  const p1=(prompt((school.name||school.udise)+'\n\nಹೊಸ Head Teacher PIN ನಮೂದಿಸಿ (4 ಅಂಕೆಗಳು):','')||'').trim();
+  if(!p1)return;
+  if(!/^\d{4}$/.test(p1)){alert('Head Teacher PIN ನಿಖರವಾಗಿ 4 ಅಂಕೆಗಳಾಗಿರಬೇಕು.');return;}
+  const p2=(prompt('ಅದೇ PIN ಮತ್ತೆ ನಮೂದಿಸಿ / Confirm PIN:','')||'').trim();
+  if(p1!==p2){alert('PIN ಹೊಂದಿಕೆಯಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.');return;}
+  list[n-1]=Object.assign({},school,{headPin:p1,headPinUpdatedAt:new Date().toISOString()});
+  writeSchools(list);
+  sessionStorage.removeItem(HEAD_MODE);
+  try{
+    if(typeof window.v198SyncHeadPinVerifierForSchool==='function') window.v198SyncHeadPinVerifierForSchool(String(school.udise||''),p1);
+  }catch(e){console.warn('Head PIN cloud verifier sync skipped',e)}
+  alert('✅ Head Teacher PIN ಉಳಿಸಲಾಗಿದೆ.\n\nSchool: '+(school.name||school.udise));
+};
+function install(){
+  const admin=document.getElementById('v110Admin'); if(!admin)return;
+  if(document.getElementById('v272HeadPinBtn'))return;
+  const actions=admin.querySelector('.v110-actions'); if(!actions)return;
+  const b=document.createElement('button');
+  b.id='v272HeadPinBtn'; b.type='button'; b.className='v110-btn v110-warning';
+  b.textContent='🔑 Set / Change Head PIN'; b.onclick=window.v272SetSchoolHeadPin;
+  actions.appendChild(b);
+}
+const oldLogin=window.v110AdminLogin;
+if(typeof oldLogin==='function'){
+  window.v110AdminLogin=function(){const r=oldLogin.apply(this,arguments);setTimeout(install,80);return r};
+  try{v110AdminLogin=window.v110AdminLogin}catch(e){}
+}
+const oldOpen=window.v110OpenAdminGate;
+if(typeof oldOpen==='function'){
+  window.v110OpenAdminGate=function(){const r=oldOpen.apply(this,arguments);setTimeout(install,80);return r};
+  try{v110OpenAdminGate=window.v110OpenAdminGate}catch(e){}
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){setTimeout(install,300)});else setTimeout(install,300);
+})();
+</script>
+
+<!-- =========================================================
+ v274 FINAL HM PHONE PERSISTENCE + TEACHER SETTINGS READ-ONLY
+ - Final wrapper placed after all older Settings wrappers.
+ - Head Teacher phone persists by UDISE in db + dedicated local key.
+ - Teacher may view Settings but cannot edit/save.
+========================================================= -->
+<script id="v274HmPhonePersistFinal">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v274-HM-PHONE-PERSIST-FINAL';
+const HEAD_MODE='cce_v107_head_mode', ADMIN_SESSION='TFCCE_V110_ADMIN_SESSION', TEACHER_SESSION='TFCCE_V190_TEACHER_SESSION';
+function isHead(){return sessionStorage.getItem(HEAD_MODE)==='1'||sessionStorage.getItem(ADMIN_SESSION)==='1'}
+function isTeacher(){try{return !!JSON.parse(sessionStorage.getItem(TEACHER_SESSION)||'null')}catch(e){return false}}
+function currentUdise(){try{return String((window.db&&db.school&&db.school.udise)||document.getElementById('udise')?.value||'').trim()}catch(e){return''}}
+function key(){return 'TFCCE_HM_PHONE_FINAL_'+currentUdise()}
+function field(){return document.getElementById('v99RegisteredMobile')}
+function clean(v){return String(v||'').replace(/[^0-9+]/g,'').slice(0,15)}
+function stored(){
+ let p='';
+ try{p=String(localStorage.getItem(key())||'').trim()}catch(e){}
+ if(!p){try{p=String(db?.school?.registeredMobile||db?.school?.hmPhone||'').trim()}catch(e){}}
+ return p;
+}
+function persist(){
+ if(!isHead())return;
+ const el=field(); if(!el)return;
+ const p=clean(el.value); el.value=p;
+ try{db.school=db.school||{};db.school.registeredMobile=p;db.school.hmPhone=p;if(typeof saveData==='function')saveData()}catch(e){}
+ try{if(currentUdise())localStorage.setItem(key(),p)}catch(e){}
+}
+function restore(){
+ const el=field(); if(!el)return;
+ const p=stored();
+ if(p){el.value=p;try{db.school=db.school||{};db.school.registeredMobile=p;db.school.hmPhone=p}catch(e){}}
+}
+function roleLock(){
+ const sec=document.getElementById('settings'); if(!sec)return;
+ const teacher=isTeacher()&&!isHead();
+ sec.querySelectorAll('input,textarea,select').forEach(function(el){
+   if(teacher){el.disabled=true;el.setAttribute('data-v274-teacher-lock','1')}
+   else if(isHead()&&el.getAttribute('data-v274-teacher-lock')==='1'){el.disabled=false;el.removeAttribute('data-v274-teacher-lock')}
+ });
+ sec.querySelectorAll('button').forEach(function(b){
+   const z=(b.getAttribute('onclick')||'')+' '+(b.textContent||'');
+   if(/saveSettings|resetData|Save Settings|Reset All Data/i.test(z)) b.style.display=teacher?'none':'';
+ });
+}
+const prevSave=window.saveSettings;
+if(typeof prevSave==='function'){
+ window.saveSettings=function(){
+   if(!isHead()){alert('ಈ Settings ಬದಲಾವಣೆ Head Teacherಗೆ ಮಾತ್ರ ಲಭ್ಯ.');return false}
+   persist();
+   const r=prevSave.apply(this,arguments);
+   persist(); restore(); roleLock();
+   return r;
+ };
+ try{saveSettings=window.saveSettings}catch(e){}
+}
+const prevLoad=window.loadSettings;
+if(typeof prevLoad==='function'){
+ window.loadSettings=function(){
+   const r=prevLoad.apply(this,arguments);
+   setTimeout(function(){restore();roleLock()},0);
+   setTimeout(function(){restore();roleLock()},150);
+   return r;
+ };
+ try{loadSettings=window.loadSettings}catch(e){}
+}
+const prevShow=window.showPage;
+if(typeof prevShow==='function'){
+ window.showPage=function(page){
+   const r=prevShow.apply(this,arguments);
+   if(page==='settings'){setTimeout(function(){restore();roleLock()},0);setTimeout(function(){restore();roleLock()},180)}
+   return r;
+ };
+ try{showPage=window.showPage}catch(e){}
+}
+document.addEventListener('input',function(e){if(e.target&&e.target.id==='v99RegisteredMobile'&&isHead()){try{localStorage.setItem(key(),clean(e.target.value))}catch(x){}}},true);
+function init(){setTimeout(function(){restore();roleLock()},250)}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+window.addEventListener('load',init);
+})();
+</script>
+<!-- =========================================================
+ v275 TEACHER SCHOOL CONSOLIDATED EDIT/SAVE LOCK
+ - Teacher can view / Print / Excel / PDF / Marks Card.
+ - School Consolidated Edit + Save are Head Teacher/Admin only.
+========================================================= -->
+<script id="v275TeacherSchoolConsolidatedLock">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v275-TEACHER-SCHOOL-CONSOLIDATED-LOCK-FIXED';
+const HEAD_MODE='cce_v107_head_mode', ADMIN_SESSION='TFCCE_V110_ADMIN_SESSION', TEACHER_SESSION='TFCCE_V190_TEACHER_SESSION';
+function isHead(){return sessionStorage.getItem(HEAD_MODE)==='1'||sessionStorage.getItem(ADMIN_SESSION)==='1'}
+function isTeacher(){try{return !!JSON.parse(sessionStorage.getItem(TEACHER_SESSION)||'null')}catch(e){return false}}
+function teacherOnly(){return isTeacher()&&!isHead()}
+function denyHead(){alert('ಈ ಬದಲಾವಣೆ ಮಾಡಲು Head Teacher Login ಅಗತ್ಯವಿದೆ.');return false}
+function protectButtons(){
+ const sec=document.getElementById('school910'); if(!sec)return;
+ sec.querySelectorAll('button').forEach(function(b){
+   const z=((b.getAttribute('onclick')||'')+' '+(b.textContent||'')).toLowerCase();
+   const locked=/toggleschooleditmode|saveschoolconsolidatededits|✏️\s*edit|💾\s*save/.test(z);
+   if(!locked)return;
+   if(teacherOnly()){
+     b.setAttribute('data-v275-teacher-lock','1'); b.style.opacity='.65'; b.style.cursor='not-allowed'; b.title='Head Teacher Login required';
+   }else if(b.getAttribute('data-v275-teacher-lock')==='1'){
+     b.removeAttribute('data-v275-teacher-lock'); b.style.opacity=''; b.style.cursor=''; b.title='';
+   }
+ });
+}
+['toggleSchoolEditMode','saveSchoolConsolidatedEdits'].forEach(function(name){
+ const old=window[name]; if(typeof old!=='function'||old.__v275HeadOnly)return;
+ const wrapped=function(){if(teacherOnly())return denyHead();return old.apply(this,arguments)};
+ wrapped.__v275HeadOnly=true; window[name]=wrapped; try{eval(name+'=window["'+name+'"]')}catch(e){}
+});
+document.addEventListener('click',function(e){
+ if(!teacherOnly())return;
+ const b=e.target&&e.target.closest?e.target.closest('#school910 button'):null; if(!b)return;
+ const z=((b.getAttribute('onclick')||'')+' '+(b.textContent||'')).toLowerCase();
+ if(/toggleschooleditmode|saveschoolconsolidatededits|✏️\s*edit|💾\s*save/.test(z)){e.preventDefault();e.stopImmediatePropagation();denyHead()}
+},true);
+const prevShow=window.showPage;
+if(typeof prevShow==='function'){
+ window.showPage=function(page){const r=prevShow.apply(this,arguments);if(page==='school910'){setTimeout(protectButtons,0);setTimeout(protectButtons,150)}return r};
+ try{showPage=window.showPage}catch(e){}
+}
+function init(){protectButtons();setTimeout(protectButtons,300)}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+window.addEventListener('load',init);
+})();
+</script>
+
+
+<!-- =========================================================
+ v276 STUDENT EDIT SAVE BUTTON FIX
+ - New student: + Add Student
+ - Existing student Edit mode: Save Changes
+ - Reuses existing v84SaveStudent update logic; no academic/print/cloud changes.
+========================================================= -->
+<script id="v276StudentEditSaveButtonFix">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v276-STUDENT-EDIT-SAVE-BUTTON-FIXED';
+function editId(){return (document.getElementById('v84EditId')?.value||'').trim()}
+function topSaveButton(){
+  return Array.from(document.querySelectorAll('#students button')).find(function(b){
+    return (b.getAttribute('onclick')||'').replace(/\s/g,'')==='v84SaveStudent()' && !b.closest('#studentV84');
+  })||null;
+}
+function detailSaveButton(){
+  return Array.from(document.querySelectorAll('#studentV84 button')).find(function(b){
+    return (b.getAttribute('onclick')||'').replace(/\s/g,'')==='v84SaveStudent()';
+  })||null;
+}
+function applyMode(){
+  var editing=!!editId(), top=topSaveButton(), detail=detailSaveButton();
+  if(top){
+    top.textContent=editing?'💾 Save Changes':'+ Add Student';
+    top.classList.toggle('success',editing);
+    top.classList.toggle('primary',!editing);
+    top.title=editing?'Save changes to this student':'Add a new student';
+  }
+  if(detail){
+    detail.textContent=editing?'💾 Save Changes':'➕ Add Student';
+    detail.classList.toggle('success',editing);
+    detail.classList.toggle('primary',!editing);
+  }
+  var n=document.getElementById('v221EditNotice');
+  if(n) n.style.display=editing?'block':'none';
+}
+function wrap(name,after){
+  var old=window[name]; if(typeof old!=='function'||old.__v276)return;
+  var f=function(){var r=old.apply(this,arguments);setTimeout(function(){after.apply(null,arguments);applyMode()},30);return r};
+  f.__v276=true;window[name]=f;try{eval(name+'=window["'+name+'"]')}catch(e){}
+}
+var oldEdit=window.editStudentMaster;
+if(typeof oldEdit==='function'&&!oldEdit.__v276){
+  var e=function(id){var r=oldEdit.apply(this,arguments);setTimeout(applyMode,50);return r};
+  e.__v276=true;window.editStudentMaster=e;try{editStudentMaster=window.editStudentMaster}catch(x){}
+}
+var oldClear=window.v84ClearForm;
+if(typeof oldClear==='function'&&!oldClear.__v276){
+  var c=function(){var r=oldClear.apply(this,arguments);setTimeout(applyMode,20);return r};
+  c.__v276=true;window.v84ClearForm=c;try{v84ClearForm=window.v84ClearForm}catch(x){}
+}
+var oldSave=window.v84SaveStudent;
+if(typeof oldSave==='function'&&!oldSave.__v276){
+  var sv=function(){var wasEdit=!!editId();var r=oldSave.apply(this,arguments);setTimeout(applyMode,30);return r};
+  sv.__v276=true;window.v84SaveStudent=sv;try{v84SaveStudent=window.v84SaveStudent}catch(x){}
+}
+function init(){applyMode();setTimeout(applyMode,250)}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+window.addEventListener('load',init);
+})();
+</script>
+
+</body>
+</html>
