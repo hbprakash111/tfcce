@@ -18368,7 +18368,7 @@ setInterval(wire,1200);
 <script id="v212MasterOnlyTechScript">
 (function(){
 'use strict';
-window.TFCCE_VERSION='v212';
+window.TFCCE_VERSION='v282';
 const ADMIN_SESSION='TFCCE_V110_ADMIN_SESSION';
 function isMaster(){
   try{return sessionStorage.getItem(ADMIN_SESSION)==='1'}catch(e){return false}
@@ -18377,8 +18377,10 @@ function applyTechVisibility(){
   const master=isMaster();
   const wrap=document.getElementById('v130StatusWrap');
   if(wrap){
-    wrap.style.display=master?'':'none';
-    wrap.setAttribute('aria-hidden',master?'false':'true');
+    /* v282: keep the four safe status indicators visible for school users too.
+       This changes display only; v276 role/permission logic remains untouched. */
+    wrap.style.display='';
+    wrap.setAttribute('aria-hidden','false');
   }
   const review=document.getElementById('v210CloudReviewOverlay');
   if(review && !master) review.style.display='none';
@@ -18593,6 +18595,7 @@ function makePrintDoc(){
  '.pc-bottom{display:grid;grid-template-columns:1fr 1fr;gap:3mm 8mm;margin-top:3mm}.pc-summary{font-size:14px!important;margin-top:3mm!important;line-height:1.55;font-weight:700}.pc-sign{display:flex;justify-content:space-between;margin-top:auto;padding-top:12mm;font-weight:700;font-size:12px}.no-print{display:none!important}'+
  'h1,h2,h3,h4,p{page-break-after:avoid}'+
  '</style></head><body><main class="print-page">'+card+'</main>
+\n<!-- v255: Marks Card stable current-page print. No iframe/popup; academic logic untouched. -->\n<style id="v255MarksCardPrintStyle">\n#__pc_print_overlay{display:none}\n@media print{\n  @page{size:A4 portrait;margin:8mm}\n  body>*{display:none!important}\n  body>#__pc_print_overlay{display:block!important;position:static!important;width:100%!important;height:auto!important;margin:0!important;padding:0!important;background:#fff!important}\n  #__pc_print_overlay .pc-card{display:flex!important;width:100%!important;max-width:194mm!important;min-height:274mm!important;margin:0 auto!important;border:1px solid #555!important;padding:6mm!important;box-sizing:border-box!important;font-family:"Noto Sans Kannada","Nirmala UI",Arial,sans-serif!important;color:#111!important;background:#fff!important;page-break-inside:avoid!important;flex-direction:column!important}\n  #__pc_print_overlay h2{display:block!important;text-align:center!important;width:100%!important;margin:2mm auto 2mm!important;font-size:18px!important;line-height:1.35!important}\n  #__pc_print_overlay h3{display:block!important;text-align:center!important;width:100%!important;margin:1mm auto 4mm!important;font-size:16px!important}\n  #__pc_print_overlay .pc-meta{display:grid!important;grid-template-columns:1fr 1fr!important;gap:2.2mm 9mm!important;margin:4mm 0 6mm!important;font-size:14px!important;line-height:1.4!important}\n  #__pc_print_overlay .pc-card>div[style*="overflow-x"]{display:block!important;width:100%!important;margin-top:5mm!important;overflow:visible!important}\n  #__pc_print_overlay table,#__pc_print_overlay .pc-table{display:table!important;width:100%!important;border-collapse:collapse!important;table-layout:fixed!important;font-size:12px!important}\n  #__pc_print_overlay thead{display:table-header-group!important}#__pc_print_overlay tbody{display:table-row-group!important}#__pc_print_overlay tr{display:table-row!important}\n  #__pc_print_overlay th,#__pc_print_overlay td{display:table-cell!important;border:1px solid #777!important;padding:4mm .9mm!important;text-align:center!important;vertical-align:middle!important;overflow-wrap:anywhere!important}\n  #__pc_print_overlay .pc-table th:first-child,#__pc_print_overlay .pc-table td:first-child{width:18%!important;text-align:left!important}\n  #__pc_print_overlay .pc-table td:not(.pc-subject){font-weight:800!important;font-size:13px!important}\n  #__pc_print_overlay .pc-table-910{font-size:7px!important}\n  #__pc_print_overlay .pc-table-910 th,#__pc_print_overlay .pc-table-910 td{padding:4mm .25mm!important;line-height:1.18!important;font-size:7px!important}\n  #__pc_print_overlay .pc-table-910 td:not(.pc-subject){font-size:7.6px!important;font-weight:800!important}\n  #__pc_print_overlay .pc-table-910 .pc-subject{font-size:8px!important}\n  #__pc_print_overlay .pc-summary{display:grid!important;font-size:14px!important;margin-top:3mm!important;line-height:1.55!important;font-weight:700!important}\n  #__pc_print_overlay .pc-sign{display:flex!important;justify-content:space-between!important;margin-top:auto!important;padding-top:12mm!important;font-weight:700!important;font-size:12px!important}\n  #__pc_print_overlay .no-print,#__pc_print_overlay button,#__pc_print_overlay script,#__pc_print_overlay style{display:none!important}\n}\n</style>\n<script id="v255MarksCardPrintFix">\n(function(){\n'use strict';\nwindow.TFCCE_VERSION='v255';\nfunction buildOverlay(){\n  var source=document.querySelector('#progressCardBody .pc-card');\n  if(!source){alert('Marks Card ಮೊದಲು View ಮಾಡಿ.');return null;}\n  var old=document.getElementById('__pc_print_overlay');if(old)old.remove();\n  var overlay=document.createElement('div');overlay.id='__pc_print_overlay';\n  var clone=source.cloneNode(true);\n  clone.querySelectorAll('script,style,button,.no-print').forEach(function(n){n.remove();});\n  overlay.appendChild(clone);document.body.appendChild(overlay);return overlay;\n}\nfunction stablePrint(){\n  var overlay=buildOverlay();if(!overlay)return;\n  var oldTitle=document.title;document.title='Marks Card - Progress Card';\n  var cleaned=false;\n  function cleanup(){if(cleaned)return;cleaned=true;document.title=oldTitle;try{overlay.remove();}catch(e){}window.removeEventListener('afterprint',cleanup);}\n  window.addEventListener('afterprint',cleanup);\n  /* Force layout before print; no iframe, popup, load wait, or long timer. */\n  void overlay.offsetHeight;\n  try{window.focus();window.print();}catch(e){cleanup();alert('Print Preview ತೆರೆಯಲು ಆಗಲಿಲ್ಲ: '+e.message);}\n  setTimeout(cleanup,3000);\n}\nwindow.v226PrintProgressCard=stablePrint;\nwindow.printProgressCard=stablePrint;\nfunction bind(){\n  var modal=document.getElementById('progressCardModal');if(!modal)return;\n  var actions=modal.querySelector('.pc-actions');if(!actions)return;\n  var pp=document.getElementById('v226PrintPreview');if(pp)pp.onclick=stablePrint;\n  Array.prototype.forEach.call(actions.querySelectorAll('button'),function(b){if(/^🖨\\s*Print$/.test((b.textContent||'').trim())||((b.textContent||'').trim()==='🖨 Print'))b.onclick=stablePrint;});\n}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bind);else bind();\nwindow.addEventListener('load',bind);\nvar oldOpen=window.openProgressCard;if(typeof oldOpen==='function')window.openProgressCard=function(){var r=oldOpen.apply(this,arguments);bind();return r;};\n})();\n<\/script>\n
 ');
  d.close();
  return frame;
@@ -18692,20 +18695,14 @@ if(typeof previous251==='function'&&!previous251._v251patched){
 })();
 </script>
 
-<!-- =========================================================
- v252 SIMPLE TEACHER ACCESS FINAL
- Policy: Teachers may enter/save marks for ALL classes/subjects.
- Head Teacher only: student master mutations, TC/transfer, teacher
- management, settings/data reset/import, academic admin actions.
-========================================================= -->
-<style id="v253TeacherReadOnlyStyle">
+<!-- =========================================================\n v252 SIMPLE TEACHER ACCESS FINAL\n Policy: Teachers may enter/save marks for ALL classes/subjects.\n Head Teacher only: student master mutations, TC/transfer, teacher\n management, settings/data reset/import, academic admin actions.\n========================================================= -->\n<style id="v253TeacherReadOnlyStyle">
 body.v253-teacher-mode #students .no-print{display:none!important}
 body.v253-teacher-mode #students input[type="radio"]{display:none!important}
 </style>
 <script id="v253SimpleTeacherAccessFinal">
 (function(){
 'use strict';
-window.TFCCE_VERSION='v279';
+window.TFCCE_VERSION='v253';
 const HEAD_MODE='cce_v107_head_mode', ADMIN_SESSION='TFCCE_V110_ADMIN_SESSION', TEACHER_SESSION='TFCCE_V190_TEACHER_SESSION';
 function head(){return sessionStorage.getItem(HEAD_MODE)==='1'||sessionStorage.getItem(ADMIN_SESSION)==='1'}
 function teacher(){try{return !!JSON.parse(sessionStorage.getItem(TEACHER_SESSION)||'null')}catch(e){return false}}
@@ -19215,72 +19212,6 @@ if(typeof oldSave==='function'&&!oldSave.__v276){
 function init(){applyMode();setTimeout(applyMode,250)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 window.addEventListener('load',init);
-})();
-</script>
-
-<!-- v279: fixed literal escaped newline text rendered at page bottom. -->
-
-<!-- v280: Restore school-facing safe cloud status indicators only. -->
-<style id="v280SchoolStatusStyle">
-#v130StatusWrap{display:flex!important}
-#v187SmartCloudPill{display:none!important}
-</style>
-<script id="v280SchoolStatusScript">
-(function(){
-'use strict';
-window.TFCCE_VERSION='v280';
-function applyV280Status(){
-  var wrap=document.getElementById('v130StatusWrap');
-  if(!wrap)return;
-  /* Safe read-only status indicators are visible to school users. */
-  wrap.style.setProperty('display','flex','important');
-  wrap.setAttribute('aria-hidden','false');
-  /* Keep only the four requested indicators. */
-  Array.prototype.slice.call(wrap.children).forEach(function(el){
-    var t=(el.textContent||'').trim();
-    if(t.indexOf('Last Backup:')!==-1) el.style.display='none';
-    if(el.tagName==='BUTTON' && t.indexOf('Restore Latest Backup')!==-1) el.style.display='none';
-  });
-  var smart=document.getElementById('v187SmartCloudPill');
-  if(smart)smart.style.setProperty('display','none','important');
-}
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){setTimeout(applyV280Status,300)});
-else setTimeout(applyV280Status,100);
-window.addEventListener('load',function(){setTimeout(applyV280Status,600)});
-setInterval(applyV280Status,700);
-})();
-</script>
-
-<!-- v281: keep the four user-facing cloud status indicators visible -->
-<style id="v281StatusAlwaysVisibleStyle">
-  #v130StatusWrap, #v280StatusWrap {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-</style>
-<script id="v281StatusAlwaysVisibleScript">
-(function(){
-  function keepStatusVisible(){
-    ['v130StatusWrap','v280StatusWrap'].forEach(function(id){
-      var el=document.getElementById(id);
-      if(el){
-        el.style.setProperty('display','flex','important');
-        el.style.setProperty('visibility','visible','important');
-        el.style.setProperty('opacity','1','important');
-      }
-    });
-  }
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded', keepStatusVisible);
-  } else {
-    keepStatusVisible();
-  }
-  window.addEventListener('load', keepStatusVisible);
-  setTimeout(keepStatusVisible, 250);
-  setTimeout(keepStatusVisible, 1000);
-  setTimeout(keepStatusVisible, 2500);
-  setInterval(keepStatusVisible, 1500);
 })();
 </script>
 
