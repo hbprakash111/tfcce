@@ -17976,6 +17976,7 @@ setInterval(function(){try{mountRecovery()}catch(e){}},2500);
 'use strict';
 window.TFCCE_VERSION='v198';
 window.V198_CROSS_BROWSER_HEAD_PIN=true;
+window.V316_HEAD_PIN_CLOUD_SYNC_FIX=true;
 
 const SCHOOL_SESSION='TFCCE_V110_SCHOOL_SESSION';
 const SCHOOL_STORE='TFCCE_V110_SCHOOLS';
@@ -18086,6 +18087,9 @@ async function syncHeadVerifier(u,pin){
   saveSchoolFields(u,{headPinHash:payload._cloudAccess.headPinVerifier,headPinSet:true,headPinUpdatedAt:payload._cloudAccess.headPinUpdatedAt});
   return true;
 }
+// v316: expose the existing secure verifier sync so later Master Admin PIN controls
+// can push the verifier to cloud on every Set/Change, including re-saving the same PIN.
+window.v198SyncHeadPinVerifierForSchool=syncHeadVerifier;
 async function cloudVerifier(u){
   u=normU(u); const local=schoolRec(u);
   if(local&&String(local.headPinHash||'').trim())return String(local.headPinHash).trim();
@@ -18137,7 +18141,7 @@ if(typeof oldSetHead==='function'){
     const r=oldSetHead.apply(this,arguments);
     setTimeout(function(){
       const after=String(schoolRec(udise)?.headPin||'').trim();
-      if(after && after!==before){
+      if(after){
         syncHeadVerifier(udise,after).then(function(ok){
           if(ok)console.log('v198 Head PIN verifier synced for '+normU(udise));
         }).catch(function(e){console.warn('v198 Head PIN verifier sync',e)});
