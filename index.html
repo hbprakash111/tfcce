@@ -19984,5 +19984,76 @@ if(typeof old==='function'){
 }
 })();
 </script>
+
+
+<!-- =========================================================
+ v317 HEAD PIN CLOUD CONFIRM FIX
+ - Does not change marks/reports/print/TC/certificate/role rules.
+ - After Master Admin Set/Change Head PIN, waits for the v198 secure
+   verifier upload and explicitly reports cloud success/failure.
+ - Raw Head PIN remains local; only the PBKDF2 verifier is sent to cloud.
+========================================================== -->
+<script id="v317HeadPinCloudConfirmFix">
+(function(){
+'use strict';
+window.TFCCE_VERSION='v317-HEAD-PIN-CLOUD-CONFIRM';
+window.V317_HEAD_PIN_CLOUD_CONFIRM_FIX=true;
+const STORE='TFCCE_V110_SCHOOLS';
+const ADMIN_SESSION='TFCCE_V110_ADMIN_SESSION';
+function normU(v){return String(v||'').replace(/[０-９]/g,function(ch){return String.fromCharCode(ch.charCodeAt(0)-0xFEE0)}).replace(/[\s\-]/g,'').trim()}
+function schools(){try{const a=JSON.parse(localStorage.getItem(STORE)||'[]');return Array.isArray(a)?a:[]}catch(e){return[]}}
+function rec(u){const n=normU(u);return schools().find(function(x){return normU(x.udise)===n})||null}
+async function forceCloud(u){
+  u=normU(u); const r=rec(u); const pin=String(r&&r.headPin||'').trim();
+  if(!u||!pin)return false;
+  if(typeof window.v198SyncHeadPinVerifierForSchool!=='function')throw new Error('Secure Head PIN cloud sync function unavailable');
+  const ok=await window.v198SyncHeadPinVerifierForSchool(u,pin);
+  if(!ok)throw new Error('School cloud secret unavailable. Please School Login first, then try Change Head PIN again.');
+  return true;
+}
+const previous=window.v178SetHeadTeacherPin;
+if(typeof previous==='function'){
+  window.v178SetHeadTeacherPin=function(udise){
+    if(sessionStorage.getItem(ADMIN_SESSION)!=='1'){alert('Master Admin login required.');return;}
+    const before=String(rec(udise)?.headPinUpdatedAt||'');
+    const result=previous.apply(this,arguments);
+    setTimeout(async function(){
+      const r=rec(udise); if(!r||!String(r.headPin||'').trim())return;
+      const after=String(r.headPinUpdatedAt||'');
+      if(before===after)return; // cancelled/no change
+      try{
+        await forceCloud(udise);
+        alert('☁️ ✅ Head Teacher PIN cloud sync ಯಶಸ್ವಿಯಾಗಿದೆ.\n\nಈಗ ಬೇರೆ browser/deviceನಲ್ಲಿ ಇದೇ PIN ಬಳಸಿ Head Teacher Access ಪರೀಕ್ಷಿಸಿ.');
+      }catch(e){
+        console.error('v317 Head PIN cloud sync failed',e);
+        alert('⚠️ Head Teacher PIN ಈ browserನಲ್ಲಿ ಉಳಿಸಲಾಗಿದೆ, ಆದರೆ cloud sync ಆಗಿಲ್ಲ.\n\nಮೊದಲು ಇದೇ schoolಗೆ School Login ಮಾಡಿ, ನಂತರ Master Admin → Change Head PIN ಮೂಲಕ ಮತ್ತೆ save ಮಾಡಿ.\n\nDetails: '+(e&&e.message?e.message:e));
+      }
+    },250);
+    return result;
+  };
+  try{v178SetHeadTeacherPin=window.v178SetHeadTeacherPin}catch(e){}
+}
+// Also strengthen the later simple Master button without changing its UI.
+const old272=window.v272SetSchoolHeadPin;
+if(typeof old272==='function'){
+  window.v272SetSchoolHeadPin=function(){
+    const before=schools().map(x=>String(x.headPinUpdatedAt||'')).join('|');
+    const r=old272.apply(this,arguments);
+    setTimeout(async function(){
+      const list=schools();
+      const changed=list.find(function(x,i){return String(x.headPinUpdatedAt||'')!==String(before.split('|')[i]||'') && String(x.headPin||'').trim()});
+      if(!changed)return;
+      try{
+        await forceCloud(changed.udise);
+        alert('☁️ ✅ Head Teacher PIN cloud sync ಯಶಸ್ವಿಯಾಗಿದೆ.');
+      }catch(e){console.error('v317 simple Head PIN cloud sync failed',e)}
+    },250);
+    return r;
+  };
+  try{v272SetSchoolHeadPin=window.v272SetSchoolHeadPin}catch(e){}
+}
+})();
+</script>
+
 </body>
 </html>
